@@ -181,9 +181,17 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Profile
+  .profile img {
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+
+  .profile img:hover {
+    transform: scale(1.1); /* Scale up the image */
+  }
 
 .profile {
   width: 100%;
+
 
   .more-info {
     margin-bottom: 5px;
