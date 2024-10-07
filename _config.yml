@@ -6,7 +6,7 @@ title: Soham Gaonkar # the website title (if blank, full name will be used inste
 first_name: Soham
 middle_name:
 last_name: Gaonkar
-email: sohamgaonkar2005@gmail.com
+email: Soham.Gaonkar@iitgn.ac.in
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Soham Gaonkar's portfolio website.
 footer_text: >
@@ -15,10 +15,10 @@ footer_text: >
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon:   # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🦾  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://Soham-Gaonkar.github.io/ # the base hostname & protocol for your site
-baseurl: https://Soham-Gaonkar.github.io/
+baseurl: 
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -70,7 +70,7 @@ github_username: Soham-Gaonkar
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: soham-gaonkar-885426280
+linkedin_username: soham-gaonkar-885426280/
 telegram_username: # your Telegram user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -103,7 +103,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saGaonkar as an image (e.g., wechat-qr.png if saGaonkar to assets/img/wechat-qr.png)
 
 contact_note: >
-  Explore , Infer , Build 
+  Explore , Infer ,Build .
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -170,12 +170,12 @@ collections:
     permalink: /projects/:path/
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit:  # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: # leave blank to include all the blog posts
 
@@ -362,7 +362,7 @@ enable_masonry:             true   # enables automatic project cards arrangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
-enable_darkmode:            false   # enables switching between light/dark modes
+enable_darkmode:           true   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
