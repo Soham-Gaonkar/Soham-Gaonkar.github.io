@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 display_categories: [work, fun]
 horizontal: false
----
+<!-- ---
 
 <h2><strong>Text Generator based on next character prediction (Machine Learning Project)</strong></h2>
 <p>[Mar '24]</p>
@@ -146,4 +146,4 @@ horizontal: false
     <li>One of the founding contributors of this platform. Designed web pages using MKDocs and merged them on github.</li>
     <li>Working on making the platform open to discussions adding additional functionalities.</li>
   </ul>
-
+ -->
