@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: B.Tech at IIT Gandhinagar, CSE
+subtitle: B.Tech at IIT Gandhinagar, AI
 
 profile:
   align: right
@@ -10,7 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>second year Undergrad,</p>
-    <p>IIT Gandhinagar, CSE,</p>
+    <p>IIT Gandhinagar, AI,</p>
     <p>Mumbai, India</p>
 
 news: true  # includes a list of news items
@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-<b>Hello, I'm Soham Gaonkar, a second year undergraduate student at IIT Gandhinagar studying computer science and engineering.</b>
+<b>Hello, I'm a second year undergraduate student at IIT Gandhinagar studying artificial intelligence.</b>
 <br><br>
 #  About Me:
 
