@@ -13,7 +13,7 @@ This blog post summarizes my open source experience, right from my very first op
 ![alt text](../assets/img/GSoC_Logo.png){:width="100%"}
 
 # About Me
-I am <b>[Kishan Ved](https://github.com/Kishan-Ved)</b>, an undergraduate student at the Indian Institute of Technology Gandhinagar (IIT Gandhinagar), India, in the department of Computer Science and Engineering. I spent the summer after my second year doing my Google Summer of Code 2024 project with the NumFOCUS organization (which serves as an umbrella organization for open source projects), which had Open Science Labs as a sub organization. The project I worked on is: <b>[PyDataStructs](https://github.com/codezonediitj/pydatastructs)</b>.
+I am <b>[Soham Gaonkar](https://github.com/Kishan-Ved)</b>, an undergraduate student at the Indian Institute of Technology Gandhinagar (IIT Gandhinagar), India, in the department of Computer Science and Engineering. I spent the summer after my second year doing my Google Summer of Code 2024 project with the NumFOCUS organization (which serves as an umbrella organization for open source projects), which had Open Science Labs as a sub organization. The project I worked on is: <b>[PyDataStructs](https://github.com/codezonediitj/pydatastructs)</b>.
 
 # About PyDataStructs
 

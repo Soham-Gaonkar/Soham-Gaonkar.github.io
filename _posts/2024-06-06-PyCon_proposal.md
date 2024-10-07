@@ -56,7 +56,7 @@ PyDataStructs is an open source Python package for various data structures and a
 Attendees will walk away with a comprehensive understanding of Python C API's capabilities, its role in enhancing Python's performance, and the practical steps to extend their Python projects with C/C++. They will be inspired to leverage the strengths of adding a C++ backend for amazingly fast computations without sacrificing Python's user-friendly features.
 
 ### Speaker information
-Kishan Ved is a third year student at the Indian Institute of Technology Gandhinagar, India. He is pursuing a B.Tech degree in Computer Science and Engineering.
+Soham Gaonkar is a second year student at the Indian Institute of Technology Gandhinagar, India. He is pursuing a B.Tech degree in Computer Science and Engineering.
 
 Kishan has contributed to Google Summer of Code 2024. He has developed open source software for NumFOCUS organization's project: PyDataStructs.
 
