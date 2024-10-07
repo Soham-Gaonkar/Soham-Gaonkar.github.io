@@ -10,13 +10,13 @@ featured: false
 # Image Super Resolution and Reconstruction
 Important GitHub links to codes used to create this file:
 
-A) [Qualitative Analysis](https://github.com/Kishan-Ved/Image-SuperResolution-Reconstruction/blob/main/Image_SuperResolution_Qualitative.ipynb)
+A) [Qualitative Analysis](https://github.com/Soham-Gaonkar/Image-SuperResolution-Reconstruction/blob/main/Image_SuperResolution_Qualitative.ipynb)
 <span style="font-family: Times New Roman; font-size: 20px;">
 
-B) [Quantitative Analysis](https://github.com/Kishan-Ved/Image-SuperResolution-Reconstruction/blob/main/Image_SuperResolution._Quantitative.ipynb)
+B) [Quantitative Analysis](https://github.com/Soham-Gaonkar/Image-SuperResolution-Reconstruction/blob/main/Image_SuperResolution._Quantitative.ipynb)
 <span style="font-family: Times New Roman; font-size: 20px;">
 
-C) [Image Reconstruction](https://github.com/Kishan-Ved/Image-SuperResolution-Reconstruction/blob/main/Image_Reconstruction.ipynb)
+C) [Image Reconstruction](https://github.com/Soham-Gaonkar/Image-SuperResolution-Reconstruction/blob/main/Image_Reconstruction.ipynb)
 <span style="font-family: Times New Roman; font-size: 20px;">
 
 
@@ -110,14 +110,14 @@ The provided code performs Qualitative Analysis of Super-Resolution on a given I
         <img src="./Ques4Img/dog_sigma04.png" alt="dog_img" width="50%">
     </div>
 
-The code effectively demonstrates Super-Resolution using a linear model trained on Random Fourier Features. It provides a qualitative comparison between the original and enhanced images, showing how the resolution is improved. Additionally, it allows experimenting with different values of sigma to observe their effects on the enhanced image over different bandwidths of the fourier basis used for feature mapping. We will also see the quantitative analysis in the next part of the question which will allow us to evaluate the performance of the super-resolution technique using RMSE and PSNR.
+The code effectively demonstrates Super-Resolution using a linear model trained on Random Fourier Features. It provides a qualitative comparison between the original and enhanced images, showing how the resolution is improGaonkar. Additionally, it allows experimenting with different values of sigma to observe their effects on the enhanced image over different bandwidths of the fourier basis used for feature mapping. We will also see the quantitative analysis in the next part of the question which will allow us to evaluate the performance of the super-resolution technique using RMSE and PSNR.
 
 **NOTE:** *The quality of the output image depends on the choice of sigma (kernel width for RBF sampler) and the number of random Fourier features used, which can be further optimized using Hyperparameter Tuning.*
 
 
 ### $B.$ Quantitative Analysis
 
-The study can be further improved by adding quantitative analysis to evaluate the performance of the super-resolution technique. This can be done by calculating and comparing metrics such as Root Mean Square Error (RMSE) and Peak Signal-to-Noise Ratio (PSNR) between the Original $N$ x $N$ Image and Enhance $N$ x $N$ Image from $N/2$ x $N/2$ Image. Here is the breakdown of the code:
+The study can be further improGaonkar by adding quantitative analysis to evaluate the performance of the super-resolution technique. This can be done by calculating and comparing metrics such as Root Mean Square Error (RMSE) and Peak Signal-to-Noise Ratio (PSNR) between the Original $N$ x $N$ Image and Enhance $N$ x $N$ Image from $N/2$ x $N/2$ Image. Here is the breakdown of the code:
 
 1. **Original Image (400 x 400):**  
    The original image is the cropped image of size 400 x 400 pixels. This serves as the ground truth for comparison.
@@ -147,7 +147,7 @@ The study can be further improved by adding quantitative analysis to evaluate th
         <img src="./Ques4Img/pred_dog.png" alt="dog_img" width="70%">
     </div>
 
-    [The image here formed is made with the sigma value of 0.03 and number of random Fourier features as 10000. As the 10000 features are not able to represent the data properly, the image is not enhanced properly and is not very comparable to the original image. This can be improved by increasing the number of random Fourier features which requires more computation and memory.]
+    [The image here formed is made with the sigma value of 0.03 and number of random Fourier features as 10000. As the 10000 features are not able to represent the data properly, the image is not enhanced properly and is not very comparable to the original image. This can be improGaonkar by increasing the number of random Fourier features which requires more computation and memory.]
   
 6. **Quantitative Metrics:** 
    The mean squared error (RMSE) and peak signal-to-noise ratio (PSNR) are calculated to quantitatively assess the similarity between the original and enhanced images. These metrics provide objective measures of the quality of the enhancement.
@@ -185,7 +185,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
 
 1. **Remove 90% Data:**
 
-    The image with 90% of the data removed is as follows:
+    The image with 90% of the data remoGaonkar is as follows:
    
    <div align="center">
     <img src="./Ques4Img/dog90.png" alt="dog_img" width="50%">
@@ -202,7 +202,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
 
 2. **Remove 80% Data:**
 
-    The image with 80% of the data removed is as follows:
+    The image with 80% of the data remoGaonkar is as follows:
    
    <div align="center">
     <img src="./Ques4Img/dog80.png" alt="dog_img" width="50%">
@@ -218,7 +218,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
     PSNR: 28.25418146450278
 3. **Remove 70% Data:**
 
-    The image with 70% of the data removed is as follows:
+    The image with 70% of the data remoGaonkar is as follows:
    
    <div align="center">
     <img src="./Ques4Img/dog70.png" alt="dog_img" width="50%">
@@ -235,7 +235,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
 
 4. **Remove 60% Data:**
     
-    The image with 60% of the data removed is as follows:
+    The image with 60% of the data remoGaonkar is as follows:
     
     <div align="center">
     <img src="./Ques4Img/dog60.png" alt="dog_img" width="50%">
@@ -252,7 +252,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
 
 5. **Remove 50% Data:**
         
-    The image with 50% of the data removed is as follows:
+    The image with 50% of the data remoGaonkar is as follows:
     
     <div align="center">
     <img src="./Ques4Img/dog50.png" alt="dog_img" width="50%">
@@ -269,7 +269,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
 
 6. **Remove 40% Data:**
                 
-    The image with 40% of the data removed is as follows:
+    The image with 40% of the data remoGaonkar is as follows:
     
     <div align="center">
     <img src="./Ques4Img/dog40.png" alt="dog_img" width="50%">
@@ -286,7 +286,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
 
 7. **Remove 30% Data:**
                     
-    The image with 30% of the data removed is as follows:
+    The image with 30% of the data remoGaonkar is as follows:
     
     <div align="center">
     <img src="./Ques4Img/dog30.png" alt="dog_img" width="50%">
@@ -303,7 +303,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
     
 8. **Remove 20% Data:**
                             
-    The image with 20% of the data removed is as follows:
+    The image with 20% of the data remoGaonkar is as follows:
     
     <div align="center">
     <img src="./Ques4Img/dog20.png" alt="dog_img" width="50%">
@@ -319,7 +319,7 @@ Now, we will randomly remove data from this image and reconstruct it. This image
     PSNR: 30.78619621879038
 9. **Remove 10% Data:**
                                     
-    The image with 10% of the data removed is as follows:
+    The image with 10% of the data remoGaonkar is as follows:
     
     <div align="center">
     <img src="./Ques4Img/dog10.png" alt="dog_img" width="50%">
@@ -336,16 +336,16 @@ Now, we will randomly remove data from this image and reconstruct it. This image
 
 #### Plots
 
-##### RMSE vs Percentage of Data Removed
+##### RMSE vs Percentage of Data RemoGaonkar
 
-The following plot shows the RMSE for different percentages of data removed from the image (denoted by x-axis):
+The following plot shows the RMSE for different percentages of data remoGaonkar from the image (denoted by x-axis):
 <div align="center">
 <img src="./Ques4Img/rmse.png" alt="dog_img" width="90%">
 </div>
 
-##### PSNR vs Percentage of Data Removed
+##### PSNR vs Percentage of Data RemoGaonkar
 
-The following plot shows the Peak Signal to Noise Ratio for different percentages of data removed from the image (denoted by x-axis):
+The following plot shows the Peak Signal to Noise Ratio for different percentages of data remoGaonkar from the image (denoted by x-axis):
 <div align="center">
 <img src="./Ques4Img/psnr.png" alt="dog_img" width="90%">
 </div>
@@ -363,7 +363,7 @@ On increasing the value of sigma, the image becomes smoother and the details are
 
 **Changing sigma:**
 
-The image with 90% of the data removed is as follows:
+The image with 90% of the data remoGaonkar is as follows:
 
 <div align="center">
 <img src="./Ques4Img/dog90.png" alt="dog_img" width="50%">

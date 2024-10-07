@@ -13,7 +13,7 @@ This blog post summarizes my open source experience, right from my very first op
 ![alt text](../assets/img/GSoC_Logo.png){:width="100%"}
 
 # About Me
-I am <b>[Soham Gaonkar](https://github.com/Kishan-Ved)</b>, an undergraduate student at the Indian Institute of Technology Gandhinagar (IIT Gandhinagar), India, in the department of Computer Science and Engineering. I spent the summer after my second year doing my Google Summer of Code 2024 project with the NumFOCUS organization (which serves as an umbrella organization for open source projects), which had Open Science Labs as a sub organization. The project I worked on is: <b>[PyDataStructs](https://github.com/codezonediitj/pydatastructs)</b>.
+I am <b>[Soham Gaonkar](https://github.com/Soham-Gaonkar)</b>, an undergraduate student at the Indian Institute of Technology Gandhinagar (IIT Gandhinagar), India, in the department of Computer Science and Engineering. I spent the summer after my second year doing my Google Summer of Code 2024 project with the NumFOCUS organization (which serves as an umbrella organization for open source projects), which had Open Science Labs as a sub organization. The project I worked on is: <b>[PyDataStructs](https://github.com/codezonediitj/pydatastructs)</b>.
 
 # About PyDataStructs
 
@@ -23,7 +23,7 @@ I am <b>[Soham Gaonkar](https://github.com/Kishan-Ved)</b>, an undergraduate stu
 I began contributing to open source in December 2023, when I connected to a senior student at my university who had also done GSoC in 2023, with PyDataStructs. I was interested in the project that she did and hence I started exploring the codebase.
 
 ## Finding a good first issue
-I went to the issues tab on the repository's github page and searched for good first issues. I noticed an issue that seemed doable: <b>[Implement Introsort](https://github.com/codezonediitj/pydatastructs/issues/545)</b>. This involved implementing the sorting algorithm: Introsort in the Python backend. I had learned this as a part of my academic cousework, and hence, I was able to code this.
+I went to the issues tab on the repository's github page and searched for good first issues. I noticed an issue that seemed doable: <b>[Implement Introsort](https://github.com/codezonediitj/pydatastructs/issues/545)</b>. This involGaonkar implementing the sorting algorithm: Introsort in the Python backend. I had learned this as a part of my academic cousework, and hence, I was able to code this.
 
 ## My first Pull Request
 I started reading the README file and set up the repository locally and created the conda environment. Then I got to work. In a day, I was able to successfully create a PR (pull request) and open it on GitHub: <b>[Implemented Introsort](https://github.com/codezonediitj/pydatastructs/pull/549)</b>. This PR was reviewed and changes were requested. Once I had done all of them and all the CI checks passed, it was merged. And that's my first open souce contribution!
@@ -38,9 +38,9 @@ I found the open source community amazing, everyone was ready to help me with ev
 ## More open source contributions
 I spent the next 3 months contributing to these organizations, and I had 10 merged PRs in the LFortran repository and 5 merged PRs in the LPython repository. Here's a link to these:
 
-- <b>[LFortran contributions](https://github.com/lfortran/lfortran/pulls?q=is%3Apr+author%3AKishan-Ved+is%3Amerged)</b>
+- <b>[LFortran contributions](https://github.com/lfortran/lfortran/pulls?q=is%3Apr+author%3ASoham-Gaonkar+is%3Amerged)</b>
 
-- <b>[LPython contributions](https://github.com/lcompilers/lpython/pulls?q=is%3Apr+author%3AKishan-Ved+is%3Amerged)</b>
+- <b>[LPython contributions](https://github.com/lcompilers/lpython/pulls?q=is%3Apr+author%3ASoham-Gaonkar+is%3Amerged)</b>
 
 These made me well versed with various git commands, the skill of handling a large and dynamic codebase and communicating effectively with the community to incorporate suggestions and solve issues.
 
@@ -63,7 +63,7 @@ I got my acceptance letter at 11:32 pm IST on May 1, 2024. It was 2 minutes past
 
 ## My GSoC project goals
 
-My project involved adding a C++ backend for all tree data structures in **[PyDataStructs](https://github.com/codezonediitj/pydatastructs)**, a Python package for advanced data structures and algorithms. The user has an option to select either the Python backend or the C++ backend.
+My project involGaonkar adding a C++ backend for all tree data structures in **[PyDataStructs](https://github.com/codezonediitj/pydatastructs)**, a Python package for advanced data structures and algorithms. The user has an option to select either the Python backend or the C++ backend.
 
 
 ```python
@@ -122,7 +122,7 @@ Commits made: 12
 
 Total merged Pull Requests : 12
 
-Here's a complete list of all my **[merged PRs](https://github.com/codezonediitj/pydatastructs/pulls?q=is%3Apr+is%3Amerged+author%3AKishan-Ved)**
+Here's a complete list of all my **[merged PRs](https://github.com/codezonediitj/pydatastructs/pulls?q=is%3Apr+is%3Amerged+author%3ASoham-Gaonkar)**
 
 ## Speed results
 
@@ -136,11 +136,11 @@ The picture clearly indicates the utility of the C++ backend. It makes code exec
 
 ## Weekly reports
 
-My Google Summer of Code blogs are available on my website: **[https://kishanved.tech/blog/](https://kishanved.tech/blog/)**
+My Google Summer of Code blogs are available on my website: **[https://SohamGaonkar.tech/blog/](https://SohamGaonkar.tech/blog/)**
 
 ## Final Report
 
-My final report for Google Summer of Code 2024 is available here: **[Google Summer of Code 2024 Report](https://gist.github.com/Kishan-Ved/ebe0a971220d67517ae815e4f92d2459)**
+My final report for Google Summer of Code 2024 is available here: **[Google Summer of Code 2024 Report](https://gist.github.com/Soham-Gaonkar/ebe0a971220d67517ae815e4f92d2459)**
 
 ## Future work
 

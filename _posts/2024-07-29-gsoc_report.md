@@ -9,10 +9,10 @@ featured: true
 ---
 
 # Google Summer of Code 2024 Report
-This report summarizes the work done by me (**[Soham Gaonkar](https://github.com/Kishan-Ved)**) for **Google Summer of Code 2024** with the **NumFOCUS** organization, on the project **[Open Science Labs: PyDataStructs: Add a C++ Backend for tree data structures and their algorithms](https://summerofcode.withgoogle.com/programs/2024/projects/2nrxEFTg)**.
-Weekly reports are available here: [GSoC BLogs](https://kishanved.tech/blog/)
+This report summarizes the work done by me (**[Soham Gaonkar](https://github.com/Soham-Gaonkar)**) for **Google Summer of Code 2024** with the **NumFOCUS** organization, on the project **[Open Science Labs: PyDataStructs: Add a C++ Backend for tree data structures and their algorithms](https://summerofcode.withgoogle.com/programs/2024/projects/2nrxEFTg)**.
+Weekly reports are available here: [GSoC BLogs](https://SohamGaonkar.tech/blog/)
 
-This report is available as a GitHub Gist, it contains more revisions. [View here.](https://gist.github.com/Kishan-Ved/ebe0a971220d67517ae815e4f92d2459)
+This report is available as a GitHub Gist, it contains more revisions. [View here.](https://gist.github.com/Soham-Gaonkar/ebe0a971220d67517ae815e4f92d2459)
 
 ![alt text](../assets/img/GSoC_NumFOCUS.png){:width="100%"}
 
@@ -35,7 +35,7 @@ So, you can easily rely on PyDataStructs for any data structure or algorithm you
 
 ## GSoC Project Goals
 
-My project involved adding a C++ backend for all tree data structures in [PyDataStructs](https://github.com/codezonediitj/pydatastructs), a Python package for advanced data structures and algorithms. The user has an option to select either the Python backend or the C++ backend.
+My project involGaonkar adding a C++ backend for all tree data structures in [PyDataStructs](https://github.com/codezonediitj/pydatastructs), a Python package for advanced data structures and algorithms. The user has an option to select either the Python backend or the C++ backend.
 
 ```python
 tree = RedBlackTree(backend=Backend.CPP)
@@ -88,7 +88,7 @@ Commits made: 11
 
 Total merged Pull Requests : 11
 
-Here's a complete list of all my [merged PRs](https://github.com/codezonediitj/pydatastructs/pulls?q=is%3Apr+is%3Amerged+author%3AKishan-Ved)
+Here's a complete list of all my [merged PRs](https://github.com/codezonediitj/pydatastructs/pulls?q=is%3Apr+is%3Amerged+author%3ASoham-Gaonkar)
 
 ## Speed results
 
@@ -99,7 +99,7 @@ Time taken for methods of Binary Search Tree class to execute in different backe
 
 
 ## Weekly reports
-My Google Summer of Code blogs are available on my website: [https://kishanved.tech/blog/](https://kishanved.tech/blog/)
+My Google Summer of Code blogs are available on my website: [https://SohamGaonkar.tech/blog/](https://SohamGaonkar.tech/blog/)
 
 ## Future work
 Some issues have been opened, these can be addressed. Refer PyDataStructs Wiki on GitHub for upcoming plans.

@@ -58,7 +58,7 @@ Attendees will walk away with a comprehensive understanding of Python C API's ca
 ### Speaker information
 Soham Gaonkar is a second year student at the Indian Institute of Technology Gandhinagar, India. He is pursuing a B.Tech degree in Computer Science and Engineering.
 
-Kishan has contributed to Google Summer of Code 2024. He has developed open source software for NumFOCUS organization's project: PyDataStructs.
+Soham has contributed to Google Summer of Code 2024. He has developed open source software for NumFOCUS organization's project: PyDataStructs.
 
 Being the Head Boy of his school, he has delivered a speech in a stadium, to an audience of 1000+ people, on the annual sports day. Here is a clip from the speech: [https://drive.google.com/file/d/1RtK_JPUGxIGHPMCT-JAw43ca922g0unf/view?usp=sharing](https://drive.google.com/file/d/1RtK_JPUGxIGHPMCT-JAw43ca922g0unf/view?usp=sharing)
 
@@ -75,10 +75,10 @@ Slides: [https://drive.google.com/file/d/1K2DjwfJOrBZaMIlv5abQHZR0jxxO2yBE/view?
 An example code will be used for explanation, as mentioned in the outline of the talk.
 
 ### Speaker links
-GitHub: [https://github.com/Kishan-Ved](https://github.com/Kishan-Ved)
+GitHub: [https://github.com/Soham-Gaonkar](https://github.com/Soham-Gaonkar)
 
-Google Summer of Code Blogs: [https://kishanved.tech/blog/](https://kishanved.tech/blog/)
+Google Summer of Code Blogs: [https://SohamGaonkar.tech/blog/](https://SohamGaonkar.tech/blog/)
 
-Email: kishanved123456@gmail.com
+Email: SohamGaonkar123456@gmail.com
 
-LinkedIn: [https://www.linkedin.com/in/kishan-ved-506140259/](https://www.linkedin.com/in/kishan-ved-506140259/)
+LinkedIn: [https://www.linkedin.com/in/Soham-Gaonkar-506140259/](https://www.linkedin.com/in/Soham-Gaonkar-506140259/)

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I recieved my Google Summer of Code **[completion certificate](https://drive.google.com/file/d/1wY3J6rfEnQlPvmaZIoB0heoZL6y2I-a3/view?usp=sharing)**!
+I recieGaonkar my Google Summer of Code **[completion certificate](https://drive.google.com/file/d/1wY3J6rfEnQlPvmaZIoB0heoZL6y2I-a3/view?usp=sharing)**!

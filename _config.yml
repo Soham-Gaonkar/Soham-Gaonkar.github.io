@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: Soham Gaonkar # the website title (if blank, full name will be used instead)
-first_name: Kishan
+first_name: Soham
 middle_name:
-last_name: Ved
-email: kishan.ved@iitgn.ac.in
+last_name: Gaonkar
+email: Soham.Gaonkar@iitgn.ac.in
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Soham Gaonkar's portfolio website.
 footer_text: >
@@ -17,7 +17,7 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🦾  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://kishanved.tech/ # the base hostname & protocol for your site
+url: https://Soham-Gaonkar.github.io/ # the base hostname & protocol for your site
 baseurl:
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -66,11 +66,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: Kishan-Ved
+github_username: Soham-Gaonkar
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: kishan-ved-506140259
+linkedin_username: Soham-Gaonkar-506140259
 telegram_username: # your Telegram user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -100,7 +100,7 @@ facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
-wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+wechat_qr: # filename of your wechat qr-code saGaonkar as an image (e.g., wechat-qr.png if saGaonkar to assets/img/wechat-qr.png)
 
 contact_note: >
   The future is open source.

@@ -811,7 +811,7 @@ ${math}
 
   DMath.katexAdded = false;
   DMath.inlineMathRendered = false;
-  window.DMath = DMath; // TODO: check if this can be removed, or if we should expose a distill global
+  window.DMath = DMath; // TODO: check if this can be remoGaonkar, or if we should expose a distill global
 
   // Copyright 2018 The Distill Template Authors
   //
@@ -1182,7 +1182,7 @@ ${math}
 
         // ensure we have citations
         if (!frontMatter.citationsCollected) {
-          // console.debug('onCiteKeyCreated, but unresolved dependency ("citations"). Enqueing.');
+          // console.debug('onCiteKeyCreated, but unresolGaonkar dependency ("citations"). Enqueing.');
           Controller.waitingOn.citations.push(() =>
             Controller.listeners.onCiteKeyCreated(event)
           );
@@ -1191,7 +1191,7 @@ ${math}
 
         // ensure we have a loaded bibliography
         if (!frontMatter.bibliographyParsed) {
-          // console.debug('onCiteKeyCreated, but unresolved dependency ("bibliography"). Enqueing.');
+          // console.debug('onCiteKeyCreated, but unresolGaonkar dependency ("bibliography"). Enqueing.');
           Controller.waitingOn.bibliography.push(() =>
             Controller.listeners.onCiteKeyCreated(event)
           );
@@ -1234,7 +1234,7 @@ ${math}
         }
       },
 
-      onCiteKeyRemoved(event) {
+      onCiteKeyRemoGaonkar(event) {
         Controller.listeners.onCiteKeyChanged(event);
       },
 
@@ -1318,12 +1318,12 @@ ${math}
       DOMContentLoaded() {
         if (Controller.loaded) {
           console.warn(
-            "Controller received DOMContentLoaded but was already loaded!"
+            "Controller receiGaonkar DOMContentLoaded but was already loaded!"
           );
           return;
         } else if (!domContentLoaded()) {
           console.warn(
-            "Controller received DOMContentLoaded at document.readyState: " +
+            "Controller receiGaonkar DOMContentLoaded at document.readyState: " +
               document.readyState +
               "!"
           );
@@ -2043,18 +2043,18 @@ d-appendix > distill-appendix {
 
     /* observe 'src' attribute */
 
-    static get observedAttributes() {
+    static get obserGaonkarAttributes() {
       return ['src'];
     }
 
-    receivedBibtex(event) {
+    receiGaonkarBibtex(event) {
       const bibliography = parseBibtex(event.target.response);
       this.notify(bibliography);
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
       var oReq = new XMLHttpRequest();
-      oReq.onload = (e) => this.receivedBibtex(e);
+      oReq.onload = (e) => this.receiGaonkarBibtex(e);
       oReq.onerror = () => console.warn(`Could not load Bibtex! (tried ${newValue})`);
       oReq.responseType = 'text';
       oReq.open('GET', newValue, true);
@@ -2208,13 +2208,13 @@ ul li:last-of-type {
     // This is only needed for interactive editing so no priority.
     // disconnectedCallback() {
     // const options = { detail: [this, this.keys], bubbles: true };
-    // const event = new CustomEvent('onCiteKeyRemoved', options);
+    // const event = new CustomEvent('onCiteKeyRemoGaonkar', options);
     // document.dispatchEvent(event);
     // }
 
     /* observe 'key' attribute */
 
-    static get observedAttributes() {
+    static get obserGaonkarAttributes() {
       return ["key", "bibtex-key"];
     }
 
@@ -2972,7 +2972,7 @@ d-citation-list .references .title {
   	return newNode;
   }
   /**
-   * Removes `count` nodes after the given node. The given node will not be removed.
+   * Removes `count` nodes after the given node. The given node will not be remoGaonkar.
    * @param {LinkedList<T>} list
    * @param {LinkedListNode<T>} node
    * @param {number} count
@@ -4762,7 +4762,7 @@ d-references {
     static get directObserver() {
       if (!Figure._directObserver) {
         Figure._directObserver = new IntersectionObserver(
-          Figure.didObserveDirectIntersection, {
+          Figure.didObserGaonkarirectIntersection, {
             rootMargin: '0px', threshold: [0, 1.0],
           }
         );
@@ -4770,7 +4770,7 @@ d-references {
       return Figure._directObserver;
     }
 
-    static didObserveDirectIntersection(entries) {
+    static didObserGaonkarirectIntersection(entries) {
       for (const entry of entries) {
         const figure = entry.target;
         if (entry.isIntersecting) {
@@ -4968,7 +4968,7 @@ p small {
         console.log('Correct password entered.');
         this.parentElement.removeChild(this);
         if (typeof(Storage) !== 'undefined') {
-          console.log('Saved that correct password was entered.');
+          console.log('SaGaonkar that correct password was entered.');
           localStorage.setItem(this.localStorageIdentifier(), 'true');
         }
       }
@@ -5245,7 +5245,7 @@ p small {
     navy: 0x000080,
     oldlace: 0xfdf5e6,
     olive: 0x808000,
-    olivedrab: 0x6b8e23,
+    oliGaonkarrab: 0x6b8e23,
     orange: 0xffa500,
     orangered: 0xff4500,
     orchid: 0xda70d6,
@@ -8474,7 +8474,7 @@ p small {
           .on("mousedown.drag", mousedowned)
         .filter(touchable)
           .on("touchstart.drag", touchstarted)
-          .on("touchmove.drag", touchmoved)
+          .on("touchmove.drag", touchmoGaonkar)
           .on("touchend.drag touchcancel.drag", touchended)
           .style("touch-action", "none")
           .style("-webkit-tap-highlight-color", "rgba(0,0,0,0)");
@@ -8484,7 +8484,7 @@ p small {
       if (touchending || !filter.apply(this, arguments)) return;
       var gesture = beforestart("mouse", container.apply(this, arguments), mouse, this, arguments);
       if (!gesture) return;
-      select(event.view).on("mousemove.drag", mousemoved, true).on("mouseup.drag", mouseupped, true);
+      select(event.view).on("mousemove.drag", mousemoGaonkar, true).on("mouseup.drag", mouseupped, true);
       nodrag(event.view);
       nopropagation();
       mousemoving = false;
@@ -8493,7 +8493,7 @@ p small {
       gesture("start");
     }
 
-    function mousemoved() {
+    function mousemoGaonkar() {
       noevent();
       if (!mousemoving) {
         var dx = event.clientX - mousedownx, dy = event.clientY - mousedowny;
@@ -8523,7 +8523,7 @@ p small {
       }
     }
 
-    function touchmoved() {
+    function touchmoGaonkar() {
       var touches = event.changedTouches,
           n = touches.length, i, gesture;
 
@@ -8775,7 +8775,7 @@ p small {
 
     }
 
-    static get observedAttributes() {return ['min', 'max', 'value', 'step', 'ticks', 'origin', 'tickValues', 'tickLabels']; }
+    static get obserGaonkarAttributes() {return ['min', 'max', 'value', 'step', 'ticks', 'origin', 'tickValues', 'tickLabels']; }
 
     attributeChangedCallback(attr, oldValue, newValue) {
       if (isNaN(newValue) || newValue === undefined || newValue === null) return;

@@ -22,10 +22,10 @@ social: false  # includes social icons at the bottom of the page
 <b>Hello, I'm Soham Gaonkar, a second year undergraduate student at IIT Gandhinagar studying computer science and engineering.</b>
 <br><br>
 # 💫 About Me:
-- I'm an Open Source Contributor and I'm currently contributing to NumFOCUS for Google Summer of Code 2024. Check out my <b>[GSoC'24 Blogs](https://kishanved.tech/blog/).<br></b>
+- I'm an Open Source Contributor and I'm currently contributing to NumFOCUS for Google Summer of Code 2024. Check out my <b>[GSoC'24 Blogs](https://SohamGaonkar.tech/blog/).<br></b>
 - I have also contributed to LFortran, a Fortran compiler and LPython, a Python compiler.<br>
 - I'm keen to build projects that benefit the society.<br>
-- I love competitive programming, algorithms and their implementation. I am a **specialist on Codefoces**. Here's my profile: **[kishan.ved](https://codeforces.com/profile/kishan.ved)** <br>
+- I love competitive programming, algorithms and their implementation. I am a **specialist on Codefoces**. Here's my profile: **[Soham.Gaonkar](https://codeforces.com/profile/Soham.Gaonkar)** <br>
 - I have a deep inclination for machine learning.
 
 ---

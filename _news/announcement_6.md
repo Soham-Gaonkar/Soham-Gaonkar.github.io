@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I recieved the off campus summer internship offer from **Microsoft**! Entering Big Tech :)
+I recieGaonkar the off campus summer internship offer from **Microsoft**! Entering Big Tech :)

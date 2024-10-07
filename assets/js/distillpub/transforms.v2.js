@@ -2614,7 +2614,7 @@
            * as \frac.
            *
            * There can only be one infix operator per group.  If there's more than one
-           * then the expression is ambiguous.  This can be resolved by adding {}.
+           * then the expression is ambiguous.  This can be resolGaonkar by adding {}.
            *
            * @returns {Array}
            */
@@ -4151,7 +4151,7 @@
       for (var _i = 0; _i < groups.length; _i++) {
           var spaces = spliceSpaces(groups, _i);
           if (spaces) {
-              // Splicing of spaces may have removed all remaining groups.
+              // Splicing of spaces may have remoGaonkar all remaining groups.
               if (_i < groups.length) {
                   // If there is a following group, move space within it.
                   if (groups[_i] instanceof _domTree2.default.symbolNode) {
@@ -5311,7 +5311,7 @@
           // Finally, we pull the skew off of the symbol.
           skew = baseGroup.skew;
           // Note that we now throw away baseGroup, because the layers we
-          // removed with getBaseElem might contain things like \color which
+          // remoGaonkar with getBaseElem might contain things like \color which
           // we can't get rid of.
           // TODO(emily): Find a better way to get the skew
       }
@@ -6709,7 +6709,7 @@
       var sizeMultiplier = options.sizeMultiplier; // default
 
       if (delim.type === "small") {
-          // Get an SVG that is derived from glyph U+221A in font KaTeX-Main.
+          // Get an SVG that is deriGaonkar from glyph U+221A in font KaTeX-Main.
           var newOptions = options.havingBaseStyle(delim.style);
           sizeMultiplier = newOptions.sizeMultiplier / options.sizeMultiplier;
 
@@ -7627,7 +7627,7 @@
   //     '\expandafter\show\the\scriptscriptfont2' \
   //     '\stop'
   //
-  // The metrics themselves were retreived using the following commands:
+  // The metrics themselves were retreiGaonkar using the following commands:
   //
   //     tftopl cmsy10
   //     tftopl cmsy7

@@ -8,11 +8,11 @@ nav_order: 4
 social: true
 ---
 
-Here's all my GitHub information. I go by the account [Kishan-Ved](https://github.com/Kishan-Ved) on GitHub.
+Here's all my GitHub information. I go by the account [Soham-Gaonkar](https://github.com/Soham-Gaonkar) on GitHub.
 
 ## GitHub Stats
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center"> <div class="repo p-2 text-center"> <a href="https://github.com/Kishan-Ved" rel="external nofollow noopener" target="_blank"> <img class="repo-img-light w-100" alt="Kishan-Ved" src="https://github-readme-stats.vercel.app/api/?username=Kishan-Ved&amp;theme=cobalt&amp;include_all_commits=true&amp;count_private=true&amp;show_icons=true"> <img class="repo-img-dark w-100" alt="Kishan-Ved" src="https://github-readme-stats.vercel.app/api/?username=Kishan-Ved&amp;theme=tokyonight&amp;show_icons=true"> </a> </div> </div>
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center"> <div class="repo p-2 text-center"> <a href="https://github.com/Soham-Gaonkar" rel="external nofollow noopener" target="_blank"> <img class="repo-img-light w-100" alt="Soham-Gaonkar" src="https://github-readme-stats.vercel.app/api/?username=Soham-Gaonkar&amp;theme=cobalt&amp;include_all_commits=true&amp;count_private=true&amp;show_icons=true"> <img class="repo-img-dark w-100" alt="Soham-Gaonkar" src="https://github-readme-stats.vercel.app/api/?username=Soham-Gaonkar&amp;theme=tokyonight&amp;show_icons=true"> </a> </div> </div>
 ---
 
 ## OpenSource Contributions
@@ -20,7 +20,7 @@ Here's all my GitHub information. I go by the account [Kishan-Ved](https://githu
 My top open source contributions on various GitHub Repositories are listed here.
 
 <p align="left">
-  <img src="https://github-contributor-stats.vercel.app/api?username=Kishan-Ved&limit=5&theme=cobalt&combine_all_yearly_contributions=true" alt="Top Contributed Repo">
+  <img src="https://github-contributor-stats.vercel.app/api?username=Soham-Gaonkar&limit=5&theme=cobalt&combine_all_yearly_contributions=true" alt="Top Contributed Repo">
 </p>
 
 ---
