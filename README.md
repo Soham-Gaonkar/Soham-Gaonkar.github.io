@@ -381,7 +381,7 @@ The quote below is taken directly from the [jekyll configuration docs](https://j
 
 > Destination folders are cleaned on site builds
 >
-> The contents of `<destination>` are automatically cleaned, by default, when the site is built. Files or folders that are not created by your site will be removed. Some files could be retained by specifying them within the `<keep_files>` configuration directive.
+> The contents of `<destination>` are automatically cleaned, by default, when the site is built. Files or folders that are not created by your site will be remoGaonkar. Some files could be retained by specifying them within the `<keep_files>` configuration directive.
 >
 > Do not use an important location for `<destination>`; instead, use it as a staging area and copy files from there to your web server.
 
@@ -437,7 +437,7 @@ $ git rebase v0.9.0
 ```
 
 If you have extensively customized a previous version, it might be trickier to upgrade.
-You can still follow the steps above, but `git rebase` may result in merge conflicts that must be resolved.
+You can still follow the steps above, but `git rebase` may result in merge conflicts that must be resolGaonkar.
 See [git rebase manual](https://help.github.com/en/github/using-git/about-git-rebase) and how to [resolve conflicts](https://help.github.com/en/github/using-git/resolving-merge-conflicts-after-a-git-rebase) for more information.
 If rebasing is too complicated, we recommend re-installing the new version of the theme from scratch and port over your content and changes from the previous version manually.
 
