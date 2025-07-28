@@ -7,7 +7,7 @@ const Resume: React.FC = () => {
 
   return (
     <section className="min-h-screen bg-zinc-100 dark:bg-zinc-900 transition-colors duration-300 py-24 px-6 font-sans">
-      <div className="max-w-screen-2xl mx-auto px-4 md:px-16">
+      <div className="max-w-screen-md mx-auto px-2 md:px-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-6">
           <h1 className="text-5xl font-extrabold text-slate-900 dark:text-white mb-2 sm:mb-0" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Resume

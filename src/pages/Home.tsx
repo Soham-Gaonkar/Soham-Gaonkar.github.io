@@ -3,7 +3,7 @@ import React from 'react';
 const Home: React.FC = () => (
   <main className="min-h-screen bg-white dark:bg-[#181c24] transition-colors duration-300 flex flex-col font-sans">
     <div className="flex flex-1 items-start justify-center w-full pt-24 pb-4">
-      <div className="w-full max-w-screen-2xl flex flex-col md:flex-row items-center justify-center px-4 md:px-16 gap-12">
+      <div className="w-full max-w-screen-md flex flex-col md:flex-row items-center justify-center px-2 md:px-6 gap-4">
         {/* Left: Profile Image */}
         <div className="flex flex-col items-center md:items-start w-full md:w-1/2 justify-center">
           <img
@@ -18,10 +18,10 @@ const Home: React.FC = () => (
           <h1 className="text-4xl md:text-5xl font-extrabold text-black dark:text-[#e0e6f0] mb-2 leading-tight whitespace-nowrap" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Soham Gaonkar
           </h1>
-          <div className="text-4xl md:text-5xl font-bold text-gray-700 dark:text-[#b0b8c9] mb-1" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <div className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-[#b0b8c9] mb-1" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             AI Undergraduate at IIT Gandhinagar
           </div>
-          <div className="text-2xl md:text-3xl text-gray-500 dark:text-[#a0a7b8] mb-8 max-w-2xl leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <div className="text-xl md:text-2xl text-gray-500 dark:text-[#a0a7b8] mb-8 max-w-2xl leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Exploring mathematics, computing, and physics. Passionate about Data Science, Computer Vision, and Applied Machine Learning.
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mb-6 w-full justify-center md:justify-start">
