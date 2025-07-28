@@ -24,7 +24,7 @@ const buttonClass =
 
 const Blog: React.FC = () => (
   <div className="min-h-screen bg-[#f9fafb] dark:bg-[#0f172a] transition-colors duration-300 flex flex-col justify-center">
-    <div className="max-w-screen-md mx-auto px-2 md:px-6 py-16">
+    <div className="max-w-screen-xl mx-auto px-4 md:px-12 py-16">
       <h1 className="text-5xl font-semibold text-center text-slate-900 dark:text-white mb-6 border-b border-b-gray-200 pb-6">Blog</h1>
       <div className="flex flex-col gap-10 mt-14">
         {posts.map((post, idx) => (
