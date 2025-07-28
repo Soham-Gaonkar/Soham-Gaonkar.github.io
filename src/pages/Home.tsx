@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home: React.FC = () => (
-  <main className="min-h-screen bg-white dark:bg-zinc-900 transition-colors duration-300 flex flex-col font-sans">
+  <main className="min-h-screen bg-white dark:bg-[#181c24] transition-colors duration-300 flex flex-col font-sans">
     <div className="flex flex-1 items-start justify-center w-full pt-24 pb-4">
       <div className="w-full max-w-screen-2xl flex flex-col md:flex-row items-center justify-center px-4 md:px-16 gap-12">
         {/* Left: Profile Image */}
@@ -9,19 +9,19 @@ const Home: React.FC = () => (
           <img
             src="/assets/profile.jpg"
             alt="Soham Gaonkar"
-            className="w-80 h-80 md:w-[30rem] md:h-[30rem] rounded-2xl object-cover shadow-lg border-4 border-black dark:border-white"
+            className="w-60 h-60 md:w-80 md:h-80 rounded-2xl object-cover shadow-lg border-4 border-black dark:border-white"
           />
         </div>
         {/* Right: Hero Content */}
         <div className="flex flex-col items-center md:items-start w-full md:w-1/2 text-center md:text-left justify-center max-w-full">
           <div className="text-3xl font-medium text-gray-500 dark:text-gray-400 mb-2">Hi! This is</div>
-          <h1 className="text-5xl md:text-6xl font-extrabold text-black dark:text-white mb-2 leading-tight whitespace-nowrap" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-black dark:text-[#e0e6f0] mb-2 leading-tight whitespace-nowrap" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Soham Gaonkar
           </h1>
-          <div className="text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-300 mb-1" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <div className="text-4xl md:text-5xl font-bold text-gray-700 dark:text-[#b0b8c9] mb-1" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             AI Undergraduate at IIT Gandhinagar
           </div>
-          <div className="text-2xl md:text-3xl text-gray-500 dark:text-gray-400 mb-8 max-w-2xl leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <div className="text-2xl md:text-3xl text-gray-500 dark:text-[#a0a7b8] mb-8 max-w-2xl leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Exploring mathematics, computing, and physics. Passionate about Data Science, Computer Vision, and Applied Machine Learning.
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mb-6 w-full justify-center md:justify-start">
