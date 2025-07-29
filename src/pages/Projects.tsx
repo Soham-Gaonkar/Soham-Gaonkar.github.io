@@ -3,16 +3,16 @@ import React from 'react';
 const projects = [
   {
     title: '3D Scene Reconstruction from a Single 360° Panorama',
-    tags: ['360° Images', '3D Reconstruction', 'Computer Vision', 'Inpainting'],
+    tags: ['Computer Vision', '3D Reconstruction', 'Deep Learning', 'Inpainting'],
     description:
       'Developed a pipeline to reconstruct 3D scenes from a single 360° panorama using 360MonoDepth and RGB fusion. Generated novel views via Fibonacci-sphere sampling and inpainting, and trained a 3D Gaussian Splatting model for inverse rendering tasks.',
     demo: '',
     github: 'https://github.com/Soham-Gaonkar/panoto3D',
-    stars: 3,
+    stars: 1,
   },
   {
     title: 'Ultrasound Segmentation of Histotripsy Ablation',
-    tags: ['PyTorch', 'Medical Imaging', 'Deep Learning'],
+    tags: ['Deep Learning', 'Medical Imaging', 'Computer Vision', 'PyTorch'],
     description:
       'Built a DeepLabV3-based segmentation pipeline for ultrasound ablation imagery using Dice-Focal loss. Achieved 83% mean IoU and 97% accuracy. Collaborated with University of Chicago for annotated data.',
     demo: '',
@@ -21,22 +21,86 @@ const projects = [
   },
   {
     title: 'MiniTorch — A Lightweight PyTorch Clone',
-    tags: ['Python', 'NumPy', 'Deep Learning'],
+    tags: ['Deep Learning', 'Python', 'Machine Learning', 'NumPy'],
     description:
       'Built a minimalist deep learning framework using NumPy, featuring custom autograd engine, tensor broadcasting, and computation graph visualizer.',
     demo: '',
     github: 'https://github.com/Umang-Shikarvar/miniTorch',
-    stars: 1,
+    stars: 3,
   },
   {
     title: 'JPEG Compression on FPGA',
-    tags: ['Verilog', 'FPGA', 'JPEG'],
+    tags: ['Hardware', 'FPGA', 'Computer Vision', 'Verilog'],
     description:
       'Designed a complete JPEG compression pipeline on Verilog with UART communication between Basys3 FPGA and host. Achieved 50% compression (PSNR > 30).',
     demo: '',
-    github: 'https://github.com/Reckadon/JPEG-Compressiont',
-    stars: 5,
+    github: 'https://github.com/Reckadon/JPEG-Compression',
+    stars: 2,
   },
+  // New projects appended below
+  {
+    title: 'Human Activity Recognition (HAR) Using Machine Learning',
+    tags: ['Machine Learning', 'Python', 'Deep Learning', 'Data Analysis'],
+    description:
+      'Developed a HAR model using accelerometer data from the UCI‑HAR dataset. Applied exploratory data analysis (EDA), zero‑shot and few‑shot learning via the Groq API. Validated performance using Leave‑One‑Out and k‑fold cross‑validation.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/Human-Activity-Recognition.git',
+    stars: 0,
+  },
+  {
+    title: 'Text Generator Streamlit Application',
+    tags: ['Machine Learning', 'NLP', 'Deep Learning', 'Streamlit'],
+    description:
+      'Built a next‑word generator using an MLP trained on recipe datasets. Trained 16 model variants across different context lengths, embedding dimensions, activations, and seeds. Visualized learned embeddings with t‑SNE for semantic insights.',
+    demo: 'https://recipe-next-word-generator.streamlit.app/',
+    github: 'https://github.com/ShardulJunagade/Next-Word-Generator',
+    stars: 0,
+  },
+  {
+    title: 'Image Classification Using Deep Learning Architectures',
+    tags: ['Deep Learning', 'Computer Vision', 'PyTorch', 'Machine Learning'],
+    description:
+      'Designed multiple VGG‑based architectures on a custom binary dataset. Achieved 100% test accuracy with full VGG19 fine‑tuning; 97.5% when tuning only final MLP layers. Enhanced performance via data augmentation (+5.5% testing accuracy).',
+    demo: '',
+    github: 'https://github.com/ShardulJunagade/ES-335-Assignment-4-2024-Fall.git',
+    stars: 0,
+  },
+  {
+    title: 'Image Reconstruction and Super-Resolution',
+    tags: ['Computer Vision', 'Machine Learning', 'Deep Learning', 'Image Processing'],
+    description:
+      'Engineered image compression & reconstruction using matrix factorization and linear ridge regression. Enhanced feature mapping with Random Fourier Features (RFF) by removing dataset patches strategically. Achieved a Peak Signal‑to‑Noise Ratio (PSNR) of 32 dB.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/Image-Reconstruction.git',
+    stars: 0,
+  },
+  {
+    title: 'Facial Image Generation and Editing Using Variational Autoencoders',
+    tags: ['Deep Learning', 'Computer Vision', 'Machine Learning', 'Image Generation'],
+    description:
+      'Developed a Variational Autoencoder trained on the CelebA dataset for realistic face generation. Performed latent‑space arithmetic to manipulate facial attributes (e.g., neutral → smiling). Demonstrated controlled image editing and expression modification via VAEs.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/VAE_celeba',
+    stars: 0,
+  },
+  {
+    title: 'FAQ NLP Assistant – Saras AI Institute',
+    tags: ['NLP', 'Machine Learning', 'Web Development', 'Python'],
+    description:
+      'Built an NLP backend for an intelligent FAQ system to assist students. Preprocessed text with spaCy (lemmatization) & pyspellchecker (spelling correction). Implemented TF‑IDF retrieval with cosine‑similarity scoring for answer ranking.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/FAQ_website/',
+    stars: 0,
+  },
+  {
+    title: 'RoboRig: 2R Manipulator Simulation – HackRush 2024 (Runner‑Up)',
+    tags: ['Robotics', 'Machine Learning', 'Python', 'Control Systems'],
+    description:
+      'Simulated a 2R robotic arm with trajectory planning, motion control, and energy optimization. Supported circular & custom user‑defined paths using feedforward/feedback control. Visualized real‑time arm motion with matplotlib animations.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/HackRush_Robotics',
+    stars: 0,
+  }
 ];
 
 const Projects: React.FC = () => (
@@ -73,13 +137,15 @@ const Projects: React.FC = () => (
               {project.description}
             </p>
             {/* Tags/keywords at bottom */}
-            <div className="flex flex-wrap gap-3 mb-6 mt-auto">
-              {project.tags.map((tag) => (
-                <span key={tag} className="px-4 py-2 bg-zinc-100 dark:bg-zinc-700 text-base font-medium rounded-full text-gray-700 dark:text-gray-200">
-                  {tag}
-                </span>
-              ))}
-            </div>
+            {project.tags && (
+              <div className="flex flex-wrap gap-3 mb-6 mt-auto">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="px-4 py-2 bg-zinc-100 dark:bg-zinc-700 text-base font-medium rounded-full text-gray-700 dark:text-gray-200">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
             {/* Demo link (if available) */}
             {project.demo && (
               <a

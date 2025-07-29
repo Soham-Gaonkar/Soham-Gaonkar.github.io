@@ -3,7 +3,7 @@ import React from 'react';
 const Home: React.FC = () => (
   <main className="min-h-screen bg-white dark:bg-[#181c24] transition-colors duration-300 flex flex-col font-sans">
     <div className="flex flex-1 items-start justify-center w-full pt-24 pb-4">
-      <div className="w-full max-w-screen-md flex flex-col md:flex-row items-center justify-center px-2 md:px-6 gap-4">
+      <div className="w-full max-w-screen-lg flex flex-col md:flex-row items-center justify-center px-2 md:px-8 gap-8">
         {/* Left: Profile Image */}
         <div className="flex flex-col items-center md:items-start w-full md:w-1/2 justify-center">
           <img
