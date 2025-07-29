@@ -104,21 +104,21 @@ const projects = [
 ];
 
 const Projects: React.FC = () => (
-  <section className="min-h-screen bg-zinc-100 dark:bg-zinc-900 transition-colors duration-300 py-20 px-4 font-sans">
+  <section className="min-h-screen bg-zinc-100 dark:bg-zinc-900 transition-colors duration-300 py-12 md:py-20 px-4 font-sans">
     <div className="max-w-screen-2xl mx-auto px-4 md:px-16">
-      <h1 className="text-5xl font-extrabold text-black dark:text-white mb-2">All My Builds</h1>
-      <p className="text-xl text-gray-500 dark:text-gray-400 mb-10">From just-for-fun to beating SOTA.</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black dark:text-white mb-2">All My Builds</h1>
+      <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8 md:mb-10">From just-for-fun to beating SOTA.</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl shadow-md p-8 flex flex-col relative hover:shadow-lg transition-all"
+            className="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl shadow-md p-4 md:p-8 flex flex-col relative hover:shadow-lg transition-all"
           >
             {/* Stars badge in its own row, above the title */}
             <div className="flex justify-end mb-2">
-              {project.stars !== undefined && (
-                <span className="flex items-center gap-1 border border-orange-300 text-orange-600 px-3 py-1 rounded-full text-base font-semibold bg-white dark:bg-zinc-800">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+              {project.stars !== undefined && project.stars > 0 && (
+                <span className="flex items-center gap-1 border border-orange-300 text-orange-600 px-2 md:px-3 py-1 rounded-full text-sm md:text-base font-semibold bg-white dark:bg-zinc-800">
+                  <svg className="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z"/></svg>
                   {project.stars} stars
                 </span>
               )}
@@ -128,19 +128,19 @@ const Projects: React.FC = () => (
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-2xl font-bold underline text-black dark:text-white mb-4 hover:text-blue-600 dark:hover:text-blue-400"
+              className="block text-lg md:text-2xl font-bold underline text-black dark:text-white mb-3 md:mb-4 hover:text-blue-600 dark:hover:text-blue-400"
             >
               {project.title}
             </a>
             {/* Description */}
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-8 flex-1">
+            <p className="text-sm md:text-lg text-gray-700 dark:text-gray-200 mb-6 md:mb-8 flex-1">
               {project.description}
             </p>
             {/* Tags/keywords at bottom */}
             {project.tags && (
-              <div className="flex flex-wrap gap-3 mb-6 mt-auto">
+              <div className="flex flex-wrap gap-2 md:gap-3 mb-4 md:mb-6 mt-auto">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="px-4 py-2 bg-zinc-100 dark:bg-zinc-700 text-base font-medium rounded-full text-gray-700 dark:text-gray-200">
+                  <span key={tag} className="px-2 md:px-4 py-1 md:py-2 bg-zinc-100 dark:bg-zinc-700 text-xs md:text-base font-medium rounded-full text-gray-700 dark:text-gray-200">
                     {tag}
                   </span>
                 ))}
@@ -152,10 +152,10 @@ const Projects: React.FC = () => (
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline mt-2"
+                className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline mt-2"
               >
                 Demo
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14 3h7m0 0v7m0-7L10 14" /></svg>
+                <svg className="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14 3h7m0 0v7m0-7L10 14" /></svg>
               </a>
             )}
           </div>
@@ -163,10 +163,10 @@ const Projects: React.FC = () => (
       </div>
     </div>
     {/* Go to Top Link */}
-    <div className="flex justify-center mt-12">
+    <div className="flex justify-center mt-8 md:mt-12">
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="text-lg text-blue-600 underline hover:text-blue-800 transition font-semibold"
+        className="text-base md:text-lg text-blue-600 underline hover:text-blue-800 transition font-semibold"
         aria-label="Go to top"
       >
         Go to Top
