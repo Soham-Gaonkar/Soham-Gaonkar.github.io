@@ -12,12 +12,11 @@ const skills = [
 const news = [
     {
     date: 'Oct 28, 2025',
-    text: (
+    text: 
       <span>
         Secured <span className="font-semibold text-orange-600">SWE Internship</span> at{' '}
         <span className="font-semibold text-orange-600">Samsung</span>. 🎉
       </span>
-    ),
   },
   {
     date: 'May 13, 2025',
