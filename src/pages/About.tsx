@@ -10,6 +10,15 @@ const skills = [
 ];
 
 const news = [
+    {
+    date: 'Oct 28, 2025',
+    text: (
+      <span>
+        Secured <span className="font-semibold text-orange-600">SWE Internship</span> at{' '}
+        <span className="font-semibold text-orange-600">Samsung</span>. 🎉
+      </span>
+    ),
+  },
   {
     date: 'May 13, 2025',
     text: <span>Joined <span className="font-semibold text-orange-600">CVIG Lab</span> as a <span className="font-semibold text-orange-600">Summer Research Intern</span>.</span>,
@@ -53,7 +62,7 @@ const About: React.FC = () => (
       {/* Top Card: Bio, Skills, Profile */}
       <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-stretch">
         {/* Left: Avatar, Name, Socials */}
-        <div className="flex flex-col items-center w-full md:w-1/3 py-10 px-8 bg-zinc-50 dark:bg-slate-900 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-slate-700">
+        <div className="flex flex-col items-center w-full md:w-1/3 py-10 px-8 bg-zinc-50 dark:bg-slate-700 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-slate-600">
           <div className="relative mb-4">
             <span className="absolute inset-0 rounded-full ring-4 ring-blue-400 dark:ring-blue-500" style={{ zIndex: 1 }}></span>
             <img
@@ -91,7 +100,7 @@ const About: React.FC = () => (
             {skills.map((skill) => (
               <li
                 key={skill}
-                className="px-6 py-3 bg-zinc-100 dark:bg-slate-700 text-black dark:text-slate-200 rounded-full text-lg font-semibold shadow-sm"
+                className="px-6 py-3 bg-zinc-100 dark:bg-slate-600 text-black dark:text-slate-100 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
                 style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
               >
                 {skill}
@@ -129,7 +138,7 @@ const About: React.FC = () => (
     <div className="flex justify-center mt-12">
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="text-lg text-blue-600 underline hover:text-blue-800 transition font-semibold"
+        className="text-lg text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300 transition font-semibold"
         aria-label="Go to top"
       >
         Go to Top

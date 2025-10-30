@@ -104,7 +104,7 @@ const projects = [
 ];
 
 const Projects: React.FC = () => (
-  <section className="min-h-screen bg-zinc-100 dark:bg-zinc-900 transition-colors duration-300 py-12 md:py-20 px-4 font-sans">
+  <section className="min-h-screen bg-zinc-100 dark:bg-slate-900 transition-colors duration-300 py-12 md:py-20 px-4 font-sans">
     <div className="max-w-screen-2xl mx-auto px-4 md:px-16">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black dark:text-white mb-2">All My Builds</h1>
       <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8 md:mb-10">From just-for-fun to beating SOTA.</p>
