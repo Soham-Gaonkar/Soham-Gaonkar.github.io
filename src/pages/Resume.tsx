@@ -6,25 +6,25 @@ const Resume: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen bg-zinc-100 dark:bg-slate-900 transition-colors duration-300 py-24 px-6 font-sans">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-12">
+    <section className="min-h-screen bg-zinc-100 dark:bg-slate-900 transition-colors duration-300 py-10 md:py-24 px-3 sm:px-4 md:px-6 font-sans">
+      <div className="max-w-screen-xl mx-auto px-1 sm:px-2 md:px-12">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-6">
-          <h1 className="text-5xl font-extrabold text-slate-900 dark:text-white mb-2 sm:mb-0" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-2 sm:mb-0" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Resume
           </h1>
           <button
             onClick={handleViewResume}
-            className="flex items-center gap-3 px-8 py-4 rounded-lg bg-slate-800 text-white dark:bg-white dark:text-slate-900 font-semibold text-xl shadow hover:scale-105 transition-all duration-300"
+            className="w-full sm:w-auto justify-center flex items-center gap-3 px-6 md:px-8 py-3 md:py-4 rounded-lg bg-slate-800 text-white dark:bg-white dark:text-slate-900 font-semibold text-base sm:text-lg md:text-xl shadow hover:scale-105 transition-all duration-300"
             aria-label="View Resume PDF"
           >
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 19V6m0 0l-7 7m7-7l7 7" />
             </svg>
             PDF
           </button>
         </div>
         <hr className="border-gray-200 dark:border-gray-700 mb-8" />
-        <p className="text-xl text-gray-500 dark:text-gray-400 mb-10" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+        <p className="text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8 md:mb-10" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
           To download my resume, click on the PDF button alongside.
         </p>
         <div className="w-full rounded-lg overflow-hidden shadow-md bg-white dark:bg-zinc-800 border border-gray-200 dark:border-gray-700">
@@ -32,7 +32,7 @@ const Resume: React.FC = () => {
             src="/assets/SohamGaonkarResume.pdf"
             type="application/pdf"
             className="w-full"
-            style={{ minHeight: '70vh', height: '80vh' }}
+            style={{ minHeight: '60vh', height: '75vh' }}
           />
         </div>
       </div>

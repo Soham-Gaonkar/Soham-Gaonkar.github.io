@@ -59,15 +59,15 @@ const news = [
 ];
 
 const About: React.FC = () => (
-  <section className="min-h-screen bg-zinc-100 dark:bg-slate-900 transition-colors duration-300 py-10 md:py-14 px-4 md:px-6 font-sans">
+  <section className="min-h-screen bg-zinc-100 dark:bg-slate-900 transition-colors duration-300 py-8 md:py-14 px-3 sm:px-4 md:px-6 font-sans">
     <div className="max-w-6xl mx-auto">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center text-black dark:text-white mb-6 md:mb-8" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-black dark:text-white mb-5 md:mb-8" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
         About Me
       </h1>
       {/* Top Card: Bio, Skills, Profile */}
       <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden w-full mx-auto flex flex-col md:flex-row items-start md:items-stretch">
         {/* Left: Avatar, Name, Socials */}
-        <div className="flex flex-col items-center w-full md:w-[34%] py-8 md:py-10 px-6 md:px-8 bg-zinc-50 dark:bg-slate-700 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-slate-600">
+        <div className="flex flex-col items-center w-full md:w-[34%] py-7 md:py-10 px-5 sm:px-6 md:px-8 bg-zinc-50 dark:bg-slate-700 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-slate-600">
           <div className="relative mb-4">
             <span className="absolute inset-0 rounded-full ring-4 ring-blue-400 dark:ring-blue-500" style={{ zIndex: 1 }}></span>
             <img
@@ -76,10 +76,10 @@ const About: React.FC = () => (
               className="w-28 h-28 rounded-full object-cover border-4 border-white dark:border-slate-800 shadow-lg relative z-10"
             />
           </div>
-          <h2 className="text-2xl font-extrabold text-black dark:text-white mb-2 mt-2 text-center" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <h2 className="text-xl sm:text-2xl font-extrabold text-black dark:text-white mb-2 mt-2 text-center" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Soham Gaonkar
           </h2>
-          <p className="text-lg text-gray-600 dark:text-slate-300 text-center mb-6" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <p className="text-base sm:text-lg text-gray-600 dark:text-slate-300 text-center mb-6" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             AI Undergraduate at IIT Gandhinagar
           </p>
           <div className="flex gap-4">
@@ -94,21 +94,21 @@ const About: React.FC = () => (
             </a>
           </div>
         </div>
-        <div className="flex-1 w-full md:pl-10 flex flex-col justify-center py-8 md:py-10 px-6 md:px-8">
-          <p className="text-lg md:text-xl text-gray-700 dark:text-slate-200 mb-8 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+        <div className="flex-1 w-full md:pl-10 flex flex-col justify-center py-7 md:py-10 px-5 sm:px-6 md:px-8">
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-slate-200 mb-7 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Hi, I am Soham Gaonkar, a junior undergraduate in Artificial Intelligence at IIT Gandhinagar. I enjoy working at the intersection of mathematics, computing, and physics, and I like building things that are both technically strong and practically useful. My current focus is on Data Science, Computer Vision, and Applied Machine Learning.
           </p>
-          <p className="text-base md:text-lg text-gray-600 dark:text-slate-300 mb-8 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-slate-300 mb-7 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Recently, I worked as a Summer Research Intern at CVIG Lab (IIT Gandhinagar), where I explored 3D reconstruction and inverse rendering workflows. I am also an incoming R&D Summer Intern at Samsung Research Institute.
           </p>
-          <h3 className="text-2xl font-bold mb-4 text-black dark:text-white" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-white" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Skills & Interests
           </h3>
-          <ul className="flex flex-wrap gap-4">
+          <ul className="flex flex-wrap gap-2.5 sm:gap-4">
             {skills.map((skill) => (
               <li
                 key={skill}
-                className="px-6 py-3 bg-zinc-100 dark:bg-slate-600 text-black dark:text-slate-100 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+                className="px-4 sm:px-6 py-2 sm:py-3 bg-zinc-100 dark:bg-slate-600 text-black dark:text-slate-100 rounded-full text-sm sm:text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
                 style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
               >
                 {skill}
@@ -118,8 +118,8 @@ const About: React.FC = () => (
         </div>
       </div>
       {/* News Card */}
-      <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl w-full mx-auto mt-8 md:mt-10 p-5 md:p-8">
-        <h3 className="text-2xl font-bold mb-6 text-black dark:text-white" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+      <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl w-full mx-auto mt-6 md:mt-10 p-4 sm:p-5 md:p-8">
+        <h3 className="text-xl sm:text-2xl font-bold mb-5 md:mb-6 text-black dark:text-white" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
           News
         </h3>
         <div className="relative">

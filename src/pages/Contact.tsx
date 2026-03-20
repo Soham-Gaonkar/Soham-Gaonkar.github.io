@@ -40,8 +40,8 @@ const contactLinks: ContactLink[] = [
   },
   {
     label: 'LeetCode',
-    href: 'https://leetcode.com/u/soham-gaonkar/',
-    description: 'leetcode.com/u/soham-gaonkar',
+    href: 'https://leetcode.com/u/sohamgaonkar2005/',
+    description: 'leetcode.com/u/sohamgaonkar2005',
     icon: (
       <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M13.483 0a1.37 1.37 0 0 0-.961.397L1.46 11.459a1.37 1.37 0 0 0 0 1.938l6.806 6.806a1.37 1.37 0 1 0 1.938-1.938L4.367 12.43l9.116-9.116A1.37 1.37 0 0 0 13.483 0zm4.742 4.055a1.37 1.37 0 0 0-.967.4l-1.83 1.83a1.37 1.37 0 1 0 1.938 1.938l1.83-1.83a1.37 1.37 0 0 0-.97-2.338zM8.634 11.06a1.37 1.37 0 1 0 0 2.74h13.996a1.37 1.37 0 1 0 0-2.74H8.634z" />

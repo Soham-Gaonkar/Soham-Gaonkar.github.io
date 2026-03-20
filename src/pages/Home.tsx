@@ -2,47 +2,47 @@ import React from 'react';
 
 const Home: React.FC = () => (
   <main className="min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-6rem)] bg-white dark:bg-slate-900 transition-colors duration-300 flex flex-col font-sans">
-    <div className="flex flex-1 items-center justify-center w-full px-4 md:px-8 py-6 md:py-10">
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 md:gap-12">
+    <div className="flex flex-1 items-center justify-center w-full px-3 sm:px-4 md:px-8 py-5 md:py-10">
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 place-items-center gap-7 md:gap-12">
         {/* Left: Profile Image */}
         <div className="flex flex-col items-center md:items-center w-full justify-center">
           <img
             src="/assets/profile.png"
             alt="Soham Gaonkar"
-            className="w-72 h-72 sm:w-80 sm:h-80 md:w-[27rem] md:h-[27rem] rounded-2xl object-cover shadow-lg border-4 border-black dark:border-slate-200"
+            className="w-[82vw] h-[82vw] max-w-[18rem] max-h-[18rem] sm:max-w-[21rem] sm:max-h-[21rem] md:w-[27rem] md:h-[27rem] rounded-2xl object-cover shadow-lg border-4 border-black dark:border-slate-200"
           />
         </div>
         {/* Right: Hero Content */}
         <div className="flex flex-col items-center md:items-start w-full text-center md:text-left justify-center max-w-xl">
-          <div className="text-2xl sm:text-3xl md:text-4xl font-medium text-gray-500 dark:text-slate-300 mb-2">Hi! This is</div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-black dark:text-white mb-2 leading-tight" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <div className="text-xl sm:text-3xl md:text-4xl font-medium text-gray-500 dark:text-slate-300 mb-2">Hi! This is</div>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-black dark:text-white mb-2 leading-tight" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Soham Gaonkar
           </h1>
-          <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700 dark:text-slate-200 mb-3" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+          <div className="text-[1.7rem] sm:text-3xl md:text-4xl font-bold text-gray-700 dark:text-slate-200 mb-3" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             AI Undergraduate at IIT Gandhinagar
           </div>
           <div className="text-xl sm:text-2xl md:text-3xl text-gray-500 dark:text-slate-400 mb-8 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-5 mb-7 w-full justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 mb-7 w-full justify-center md:justify-start">
             <a
               href="/assets/SohamGaonkarCVmarch.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 md:px-10 py-3 md:py-4 rounded-full border-2 border-black dark:border-slate-200 text-black dark:text-slate-200 bg-transparent font-semibold text-xl md:text-2xl shadow-sm hover:bg-black hover:text-white dark:hover:bg-slate-200 dark:hover:text-slate-900 transition-all duration-300"
+              className="w-full sm:w-auto text-center px-6 md:px-10 py-3 md:py-4 rounded-full border-2 border-black dark:border-slate-200 text-black dark:text-slate-200 bg-transparent font-semibold text-lg md:text-2xl shadow-sm hover:bg-black hover:text-white dark:hover:bg-slate-200 dark:hover:text-slate-900 transition-all duration-300"
               style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
             >
               Download CV
             </a>
             <a
               href="mailto:soham.gaonkar@iitgn.ac.in"
-              className="px-8 md:px-10 py-3 md:py-4 rounded-full bg-black text-white dark:bg-slate-200 dark:text-slate-900 font-semibold text-xl md:text-2xl shadow-sm hover:scale-105 transition-all duration-300"
+              className="w-full sm:w-auto text-center px-6 md:px-10 py-3 md:py-4 rounded-full bg-black text-white dark:bg-slate-200 dark:text-slate-900 font-semibold text-lg md:text-2xl shadow-sm hover:scale-105 transition-all duration-300"
               style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
             >
               Contact Me
             </a>
           </div>
-          <div className="flex gap-7 md:gap-9 mt-2 justify-center md:justify-start">
+          <div className="flex gap-6 md:gap-9 mt-1 md:mt-2 justify-center md:justify-start">
             <a href="https://www.linkedin.com/in/soham-gaonkar-885426280/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-black dark:text-slate-200 hover:scale-110 transition-transform">
               <svg className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.966 0-1.75-.79-1.75-1.75s.784-1.75 1.75-1.75 1.75.79 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
             </a>
