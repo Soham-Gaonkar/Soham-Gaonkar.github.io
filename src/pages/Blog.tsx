@@ -19,9 +19,6 @@ const posts = [
   },
 ];
 
-const buttonClass =
-  'inline-block px-5 py-2 text-sm font-medium rounded transition bg-slate-800 text-white hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-gray-200';
-
 const Blog: React.FC = () => (
   <div className="min-h-screen bg-[#f9fafb] dark:bg-[#0f172a] transition-colors duration-300 flex flex-col justify-center">
     <div className="max-w-screen-xl mx-auto px-4 md:px-12 py-16">

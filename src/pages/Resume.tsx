@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume: React.FC = () => {
   const handleViewResume = () => {
-    window.open('/assets/resume.pdf', '_blank');
+    window.open('/assets/SohamGaonkarResume.pdf', '_blank');
   };
 
   return (
@@ -29,7 +29,7 @@ const Resume: React.FC = () => {
         </p>
         <div className="w-full rounded-lg overflow-hidden shadow-md bg-white dark:bg-zinc-800 border border-gray-200 dark:border-gray-700">
           <embed
-            src="/assets/resume.pdf"
+            src="/assets/SohamGaonkarResume.pdf"
             type="application/pdf"
             className="w-full"
             style={{ minHeight: '70vh', height: '80vh' }}

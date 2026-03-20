@@ -4,19 +4,25 @@ const skills = [
   'Data Science',
   'Computer Vision',
   'Machine Learning',
+  'NLP',
+  'Computer Graphics',
   'Python',
   'React',
   'JavaScript',
 ];
 
 const news = [
-    {
-    date: 'Oct 28, 2025',
+  {
+    date: 'Summer 2026',
     text: 
       <span>
-        Secured <span className="font-semibold text-orange-600">SWE Internship</span> at{' '}
-        <span className="font-semibold text-orange-600">Samsung</span>. 🎉
+        Incoming <span className="font-semibold text-orange-600">R&D Summer Intern</span> at{' '}
+        <span className="font-semibold text-orange-600">Samsung Research Institute</span>.
       </span>
+  },
+  {
+    date: 'Aug 2025',
+    text: <span>Our ultrasound image segmentation work was accepted for presentation at <span className="font-semibold text-orange-600">IEEE IUS 2025</span>, Netherlands.</span>,
   },
   {
     date: 'May 13, 2025',
@@ -53,19 +59,19 @@ const news = [
 ];
 
 const About: React.FC = () => (
-  <section className="min-h-screen bg-zinc-100 dark:bg-slate-900 transition-colors duration-300 py-16 px-6 font-sans">
-    <div className="max-w-screen-2xl mx-auto px-4 md:px-16">
-      <h1 className="text-5xl font-extrabold text-center text-black dark:text-white mb-8" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+  <section className="min-h-screen bg-zinc-100 dark:bg-slate-900 transition-colors duration-300 py-10 md:py-14 px-4 md:px-6 font-sans">
+    <div className="max-w-6xl mx-auto">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-center text-black dark:text-white mb-6 md:mb-8" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
         About Me
       </h1>
       {/* Top Card: Bio, Skills, Profile */}
-      <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-stretch">
+      <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden w-full mx-auto flex flex-col md:flex-row items-start md:items-stretch">
         {/* Left: Avatar, Name, Socials */}
-        <div className="flex flex-col items-center w-full md:w-1/3 py-10 px-8 bg-zinc-50 dark:bg-slate-700 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-slate-600">
+        <div className="flex flex-col items-center w-full md:w-[34%] py-8 md:py-10 px-6 md:px-8 bg-zinc-50 dark:bg-slate-700 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-slate-600">
           <div className="relative mb-4">
             <span className="absolute inset-0 rounded-full ring-4 ring-blue-400 dark:ring-blue-500" style={{ zIndex: 1 }}></span>
             <img
-              src="/assets/profile.jpg"
+              src="/assets/profile.png"
               alt="Soham Gaonkar"
               className="w-28 h-28 rounded-full object-cover border-4 border-white dark:border-slate-800 shadow-lg relative z-10"
             />
@@ -88,9 +94,12 @@ const About: React.FC = () => (
             </a>
           </div>
         </div>
-        <div className="flex-1 w-full md:pl-12 flex flex-col justify-center py-12 px-8">
-          <p className="text-xl text-gray-700 dark:text-slate-200 mb-10 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
-            I'm a junior at IIT Gandhinagar, majoring in Artificial Intelligence with a strong interest in the intersection of mathematics, computing and physics. I enjoy exploring algorithm design and data-driven insights to solve real-world problems. My current focus includes Data Science, Computer Vision, and Applied Machine Learning.
+        <div className="flex-1 w-full md:pl-10 flex flex-col justify-center py-8 md:py-10 px-6 md:px-8">
+          <p className="text-lg md:text-xl text-gray-700 dark:text-slate-200 mb-8 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+            Hi, I am Soham Gaonkar, a junior undergraduate in Artificial Intelligence at IIT Gandhinagar. I enjoy working at the intersection of mathematics, computing, and physics, and I like building things that are both technically strong and practically useful. My current focus is on Data Science, Computer Vision, and Applied Machine Learning.
+          </p>
+          <p className="text-base md:text-lg text-gray-600 dark:text-slate-300 mb-8 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+            Recently, I worked as a Summer Research Intern at CVIG Lab (IIT Gandhinagar), where I explored 3D reconstruction and inverse rendering workflows. I am also an incoming R&D Summer Intern at Samsung Research Institute.
           </p>
           <h3 className="text-2xl font-bold mb-4 text-black dark:text-white" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Skills & Interests
@@ -109,7 +118,7 @@ const About: React.FC = () => (
         </div>
       </div>
       {/* News Card */}
-      <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl max-w-4xl mx-auto mt-12 p-6 md:p-10">
+      <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl w-full mx-auto mt-8 md:mt-10 p-5 md:p-8">
         <h3 className="text-2xl font-bold mb-6 text-black dark:text-white" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
           News
         </h3>
