@@ -19,14 +19,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 16
 
       - run: npm install
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist   # change to ./build if needed
+          path: ./build  # change to ./build if needed
 
   deploy:
     needs: build
