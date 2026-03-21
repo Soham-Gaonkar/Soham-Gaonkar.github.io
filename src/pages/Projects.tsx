@@ -1,4 +1,5 @@
 import React from 'react';
+import { trackProjectOutboundClick } from '../utils/analytics';
 
 const projects = [
   {
@@ -14,7 +15,7 @@ const projects = [
     title: 'Ultrasound Segmentation of Histotripsy Ablation',
     tags: ['Deep Learning', 'Medical Imaging', 'Computer Vision', 'PyTorch'],
     description:
-      'Built a DeepLabV3-based segmentation pipeline for ultrasound ablation imagery using Dice-Focal loss. Achieved 83% mean IoU and 97% accuracy. Collaborated with University of Chicago for annotated data.',
+      'Built a DeepLabV3-based segmentation pipeline for ultrasound ablation imagery using Dice-Focal loss. Achieved 83% mean IoU and 97% accuracy. Collaborated with University of Chicago for annotated data. Accepted for presentation at IEEE IUS 2025, Netherlands.',
     demo: '',
     github: 'https://github.com/adi776borate/BubbleSegmentation.git',
     stars: 2,
@@ -128,6 +129,7 @@ const Projects: React.FC = () => (
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackProjectOutboundClick(project.title, 'github')}
               className="block text-lg md:text-2xl font-bold underline text-black dark:text-white mb-3 md:mb-4 hover:text-blue-600 dark:hover:text-blue-400"
             >
               {project.title}
@@ -152,6 +154,7 @@ const Projects: React.FC = () => (
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackProjectOutboundClick(project.title, 'demo')}
                 className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline mt-2"
               >
                 Demo

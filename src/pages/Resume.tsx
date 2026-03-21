@@ -1,7 +1,9 @@
 import React from 'react';
+import { trackResumeClick } from '../utils/analytics';
 
 const Resume: React.FC = () => {
   const handleViewResume = () => {
+    trackResumeClick('resume_page_button');
     window.open('/assets/SohamGaonkarResume.pdf', '_blank');
   };
 

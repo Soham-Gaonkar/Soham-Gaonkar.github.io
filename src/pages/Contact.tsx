@@ -1,4 +1,5 @@
 import React from 'react';
+import { trackContactClick } from '../utils/analytics';
 
 type ContactLink = {
   label: string;
@@ -67,6 +68,7 @@ const Contact: React.FC = () => (
             href={item.href}
             target={item.href.startsWith('mailto:') ? undefined : '_blank'}
             rel={item.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+            onClick={() => trackContactClick(item.label, 'contact_page_card')}
             className="group bg-white dark:bg-slate-800 border border-zinc-200 dark:border-slate-700 rounded-2xl p-5 md:p-6 flex items-center gap-4 hover:shadow-md transition-all"
           >
             <div className="text-black dark:text-white">{item.icon}</div>
