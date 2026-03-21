@@ -1,46 +1,32 @@
-type AnalyticsEventParams = Record<string, string | number | boolean | undefined>;
+type AnalyticsEventParams = Record<string, string | number | boolean>;
 
 declare global {
   interface Window {
-    dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
-    __analyticsInitialized?: boolean;
   }
 }
 
-const MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
-
-export const initializeAnalytics = () => {
-  if (!MEASUREMENT_ID || typeof window === 'undefined') {
-    return;
-  }
-
-  if (window.__analyticsInitialized) {
-    return;
-  }
-
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
-  document.head.appendChild(script);
-
-  window.dataLayer = window.dataLayer || [];
-
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer?.push(args);
-  };
-
-  window.gtag('js', new Date());
-  window.gtag('config', MEASUREMENT_ID, { anonymize_ip: true });
-  window.__analyticsInitialized = true;
+const isAnalyticsReady = () => {
+  return typeof window !== 'undefined' && typeof window.gtag === 'function';
 };
 
 export const trackEvent = (eventName: string, params?: AnalyticsEventParams) => {
-  if (!window.gtag) {
+  if (!isAnalyticsReady()) {
     return;
   }
 
-  window.gtag('event', eventName, params || {});
+  window.gtag?.('event', eventName, params || {});
+};
+
+export const trackPageView = (path: string) => {
+  if (!isAnalyticsReady()) {
+    return;
+  }
+
+  window.gtag?.('event', 'page_view', {
+    page_path: path,
+    page_title: document.title,
+  });
 };
 
 export const trackResumeClick = (source: string) => {
@@ -67,7 +53,9 @@ export const trackProjectOutboundClick = (projectTitle: string, destination: 'gi
 };
 
 export const trackContactClick = (label: string, source: string) => {
-  switch (label.toLowerCase()) {
+  const normalized = label.toLowerCase();
+
+  switch (normalized) {
     case 'email':
       trackEmailClick(source);
       break;
@@ -78,6 +66,10 @@ export const trackContactClick = (label: string, source: string) => {
       trackGitHubClick(source);
       break;
     default:
+      trackEvent('contact_click', {
+        label: normalized,
+        source,
+      });
       break;
   }
 };

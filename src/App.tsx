@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
 import SearchHighlighter from './components/SearchHighlighter';
@@ -8,13 +8,16 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-import { initializeAnalytics } from './utils/analytics';
+import { trackPageView } from './utils/analytics';
 // import Blog from './pages/Blog';
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
-    initializeAnalytics();
-  }, []);
+    const path = `${location.pathname}${location.search}${location.hash}`;
+    trackPageView(path);
+  }, [location.pathname, location.search, location.hash]);
 
   return (
     <ThemeProvider>
