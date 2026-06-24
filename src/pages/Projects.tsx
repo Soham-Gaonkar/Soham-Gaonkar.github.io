@@ -39,6 +39,24 @@ const projects = [
     stars: 2,
   },
   {
+    title: 'NebulaEdit — AI Image Editor',
+    tags: ['Inter IIT Adobe PS', 'Deep Learning', 'Diffusion Models', 'React', 'FastAPI'],
+    description:
+      'Developed a prompt-driven image editing system using diffusion models and optimized inference pipelines. Submitted for the Adobe Inter IIT TechMeet challenge 2025, bringing professional-grade AI editing tools to the web.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/NebulaEdit',
+    stars: 3,
+  },
+  {
+    title: 'Graph Streaming Library',
+    tags: ['Python', 'Jupyter Notebook', 'Graph Algorithms', 'Data Structures'],
+    description:
+      'Implemented algorithms and utilities for streaming graph data structures, enabling efficient analysis of large-scale graphs on-the-fly. Designed and validated using Python and Jupyter Notebooks.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/GraphStreamingLibrary',
+    stars: 2,
+  },
+  {
     title: 'MiniTorch — A Lightweight PyTorch Clone',
     tags: ['Deep Learning', 'Python', 'Machine Learning', 'NumPy'],
     description:
@@ -133,15 +151,6 @@ const Projects: React.FC = () => (
             key={idx}
             className="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl shadow-md p-4 md:p-8 flex flex-col relative hover:shadow-lg transition-all"
           >
-            {/* Stars badge in its own row, above the title */}
-            <div className="flex justify-end mb-2">
-              {project.stars !== undefined && project.stars > 0 && (
-                <span className="flex items-center gap-1 border border-orange-300 text-orange-600 px-2 md:px-3 py-1 rounded-full text-sm md:text-base font-semibold bg-white dark:bg-zinc-800">
-                  <svg className="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z"/></svg>
-                  {project.stars} stars
-                </span>
-              )}
-            </div>
             {/* Title */}
             <a
               href={project.github}

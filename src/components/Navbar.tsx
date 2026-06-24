@@ -7,8 +7,9 @@ const navLinks = [
   { to: '/about', label: 'About' },
   { to: '/projects', label: 'Projects' },
   { to: '/resume', label: 'Resume' },
+  { to: '/blog', label: 'Blog' },
+  { to: '/chess', label: 'Chess' },
   { to: '/contact', label: 'Contact' },
-  // { to: '/blog', label: 'Blog' },
 ];
 
 type SearchEntry = {
@@ -40,13 +41,25 @@ const searchIndex: SearchEntry[] = [
     to: '/projects',
     label: 'Projects',
     text:
-      '3D Scene Reconstruction panorama PanoTo3D Ultrasound Segmentation Histotripsy LLM Compression Neural Alignment Layer Merging SWaT Anomaly Detection Root Cause Analysis MiniTorch JPEG Compression FPGA Human Activity Recognition Text Generator Streamlit Image Classification Super-Resolution Facial Image Generation VAE FAQ NLP Assistant RoboRig Runner-Up',
+      '3D Scene Reconstruction panorama PanoTo3D Ultrasound Segmentation Histotripsy LLM Compression Neural Alignment Layer Merging SWaT Anomaly Detection Root Cause Analysis NebulaEdit AI Image Editor Adobe TechMeet Graph Streaming Library Python Jupyter Notebook MiniTorch JPEG Compression FPGA Human Activity Recognition Text Generator Streamlit Image Classification Super-Resolution Facial Image Generation VAE FAQ NLP Assistant RoboRig Runner-Up',
   },
   {
     to: '/resume',
     label: 'Resume',
     text:
       'Resume CV download PDF education internship achievements technical skills projects',
+  },
+  {
+    to: '/blog',
+    label: 'Blog',
+    text:
+      'Blog articles reading VLM on-device AI model compression representation geometry DeepLabV3 ultrasound histotripsy Samsung R&D Soket AI',
+  },
+  {
+    to: '/chess',
+    label: 'Chess',
+    text:
+      'Chess play game vs computer local AI minimax alpha-beta custom difficulty easy medium hard board theme settings reset undo flip board',
   },
   {
     to: '/contact',
@@ -119,8 +132,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="w-full min-h-[4rem] md:h-24 flex items-center px-3 sm:px-4 md:px-10 py-2 md:py-0 font-sans bg-[#f9fafb] dark:bg-slate-900 relative">
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between w-full">
-        {/* Left: Name */}
-        <div className="text-[clamp(1.7rem,7.2vw,2.5rem)] md:text-6xl font-medium text-black dark:text-white tracking-tight whitespace-nowrap truncate max-w-[62vw] md:max-w-none" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
+        <div className="text-[clamp(1.4rem,4.5vw,2rem)] md:text-4xl font-semibold text-black dark:text-white tracking-tight whitespace-nowrap truncate max-w-[50vw] md:max-w-none" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
           Soham Gaonkar
         </div>
         

@@ -9,7 +9,8 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import { trackPageView } from './utils/analytics';
-// import Blog from './pages/Blog';
+import Blog from './pages/Blog';
+import ChessGame from './pages/ChessGame';
 
 function App() {
   const location = useLocation();
@@ -30,7 +31,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/blog" element={<Blog />} /> */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/chess" element={<ChessGame />} />
         </Routes>
       </div>
     </ThemeProvider>
