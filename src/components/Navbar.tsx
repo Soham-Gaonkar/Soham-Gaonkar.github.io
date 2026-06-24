@@ -34,13 +34,13 @@ const searchIndex: SearchEntry[] = [
     to: '/about',
     label: 'About',
     text:
-      'Hi I am Soham Gaonkar junior undergraduate Artificial Intelligence IIT Gandhinagar skills interests Data Science Computer Vision Machine Learning NLP Computer Graphics news timeline CVIG Lab Summer Research Intern incoming R&D Summer Intern Samsung Research Institute IEEE IUS 2025 Dean List HackRush',
+      'Hi I am Soham Gaonkar junior undergraduate Artificial Intelligence IIT Gandhinagar skills interests Python C++ PyTorch Transformers FastAPI Docker FPGA Computer Vision Machine Learning NLP Model Compression On-device AI news timeline CVIG Lab Summer Research Intern Next Level Labs Samsung R&D Institute Noida Soket AI Agri-LLM IEEE IUS 2025 Dean List Academic Excellence Scholarship HackRush',
   },
   {
     to: '/projects',
     label: 'Projects',
     text:
-      '3D Scene Reconstruction panorama Ultrasound Segmentation Histotripsy MiniTorch JPEG Compression FPGA Human Activity Recognition Text Generator Streamlit Image Classification Super-Resolution Facial Image Generation VAE FAQ NLP Assistant RoboRig Runner-Up',
+      '3D Scene Reconstruction panorama PanoTo3D Ultrasound Segmentation Histotripsy LLM Compression Neural Alignment Layer Merging SWaT Anomaly Detection Root Cause Analysis MiniTorch JPEG Compression FPGA Human Activity Recognition Text Generator Streamlit Image Classification Super-Resolution Facial Image Generation VAE FAQ NLP Assistant RoboRig Runner-Up',
   },
   {
     to: '/resume',

@@ -6,37 +6,55 @@ const projects = [
     title: '3D Scene Reconstruction from a Single 360° Panorama',
     tags: ['Computer Vision', '3D Reconstruction', 'Deep Learning', 'Inpainting'],
     description:
-      'Developed a pipeline to reconstruct 3D scenes from a single 360° panorama using 360MonoDepth and RGB fusion. Generated novel views via Fibonacci-sphere sampling and inpainting, and trained a 3D Gaussian Splatting model for inverse rendering tasks.',
-    demo: '',
+      'Designed PanoTo3D, an end-to-end pipeline for single-panorama 3D scene reconstruction and novel view synthesis using 3D Gaussian Splatting. Combined monocular depth estimation with RGB panoramas to construct dense point clouds; synthesized multi-view supervision via inpainting to stabilize geometry learning.',
+    demo: 'https://antimatter15.com/splat/?url=https://raw.githubusercontent.com/Soham-Gaonkar/splat-host/main/pointcloud_newroom2.splat',
     github: 'https://github.com/Soham-Gaonkar/panoto3D',
-    stars: 1,
+    stars: 3,
   },
   {
     title: 'Ultrasound Segmentation of Histotripsy Ablation',
     tags: ['Deep Learning', 'Medical Imaging', 'Computer Vision', 'PyTorch'],
     description:
-      'Built a DeepLabV3-based segmentation pipeline for ultrasound ablation imagery using Dice-Focal loss. Achieved 83% mean IoU and 97% accuracy. Collaborated with University of Chicago for annotated data. Accepted for presentation at IEEE IUS 2025, Netherlands.',
+      'Developed a DeepLabV3-based segmentation model with custom combined Dice–Focal loss to segment histotripsy ablation bubble clouds in clinical ultrasound imagery. Improved mean IoU from 76% to 83% and accuracy from 95% to 97% over prior baselines. Accepted at IEEE IUS 2025, Netherlands.',
     demo: '',
     github: 'https://github.com/adi776borate/BubbleSegmentation.git',
+    stars: 2,
+  },
+  {
+    title: 'LLM Compression via Neural Alignment & Layer Merging',
+    tags: ['Deep Learning', 'LLMs', 'Model Compression', 'Optimization'],
+    description:
+      'Investigated representation alignment limits in LLaMA-3 (8B), analyzing representation decay. Optimized merge weights via gradient and Bayesian search, and proposed neuron-aligned merging using the Hungarian algorithm, achieving +0.0864 MMLU improvement at 12.5% compression.',
+    demo: '',
+    github: 'https://github.com/Jain-Laksh/Layer-Merging-via-Manifold-Alignment',
+    stars: 3,
+  },
+  {
+    title: 'SWaT Anomaly Detection & Root Cause Analysis',
+    tags: ['Anomaly Detection', 'LSTM Autoencoders', 'Causal Modeling', 'Industrial AI'],
+    description:
+      'Engineered a 15-stage LSTM Autoencoder anomaly detection pipeline for the SWaT industrial testbed dataset. Integrated Bayesian Networks for causal modeling and reconstruction-based root cause analysis (RCA), and local LLM path validation.',
+    demo: '',
+    github: 'https://github.com/Soham-Gaonkar/RFC',
     stars: 2,
   },
   {
     title: 'MiniTorch — A Lightweight PyTorch Clone',
     tags: ['Deep Learning', 'Python', 'Machine Learning', 'NumPy'],
     description:
-      'Built a minimalist deep learning framework using NumPy, featuring custom autograd engine, tensor broadcasting, and computation graph visualizer.',
+      'Built a NumPy-only deep learning library from scratch supporting reverse-mode autograd, dynamic computation graphs, broadcasting, neural layers, and SGD/Adam optimizers.',
     demo: '',
     github: 'https://github.com/Umang-Shikarvar/miniTorch',
-    stars: 3,
+    stars: 2,
   },
   {
     title: 'JPEG Compression on FPGA',
     tags: ['Hardware', 'FPGA', 'Computer Vision', 'Verilog'],
     description:
-      'Designed a complete JPEG compression pipeline on Verilog with UART communication between Basys3 FPGA and host. Achieved 50% compression (PSNR > 30).',
+      'Designed synthesizable Verilog modules and FSMs on Basys3 FPGA for discrete cosine transform (DCT) and coefficient pruning, achieving 50% compression with PSNR > 30 dB.',
     demo: '',
     github: 'https://github.com/Reckadon/JPEG-Compression',
-    stars: 2,
+    stars: 1,
   },
   // New projects appended below
   {

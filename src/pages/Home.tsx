@@ -27,7 +27,7 @@ const Home: React.FC = () => (
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 mb-7 w-full justify-center md:justify-start">
             <a
-              href="/assets/SohamGaonkarCVmarch.pdf"
+              href="/assets/SohamGaonkarCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackResumeClick('home_download_cv')}

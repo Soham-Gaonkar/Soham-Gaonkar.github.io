@@ -2,60 +2,101 @@ import React from 'react';
 import { trackEmailClick, trackGitHubClick, trackLinkedInClick } from '../utils/analytics';
 
 const skills = [
-  'Data Science',
+  'Python',
+  'C++',
+  'PyTorch',
+  'Transformers',
+  'FastAPI',
+  'Docker',
+  'FPGA',
   'Computer Vision',
   'Machine Learning',
   'NLP',
-  'Computer Graphics',
-  'Python',
-  'React',
-  'JavaScript',
+  'Model Compression',
+  'On-device AI',
 ];
 
 const news = [
   {
-    date: 'Summer 2026',
-    text: 
+    date: 'May 2026',
+    text: (
       <span>
-        Incoming <span className="font-semibold text-orange-600">R&D Summer Intern</span> at{' '}
-        <span className="font-semibold text-orange-600">Samsung Research Institute</span>.
+        Started as a <span className="font-semibold text-orange-600">Research Intern</span> at{' '}
+        <span className="font-semibold text-orange-600">Next Level Labs, Samsung R&D Institute, Noida</span>, optimizing VLMs/LLMs for on-device AI.
       </span>
+    ),
+  },
+  {
+    date: 'Jan 2026',
+    text: (
+      <span>
+        Joined <span className="font-semibold text-orange-600">Soket AI</span> as a{' '}
+        <span className="font-semibold text-orange-600">Research Intern</span>, working on Agri-LLM evaluation setups and SFT data generation.
+      </span>
+    ),
   },
   {
     date: 'Aug 2025',
-    text: <span>Our ultrasound image segmentation work was accepted for presentation at <span className="font-semibold text-orange-600">IEEE IUS 2025</span>, Netherlands.</span>,
+    text: (
+      <span>
+        Our ultrasound image segmentation work was accepted for presentation at{' '}
+        <span className="font-semibold text-orange-600">IEEE IUS 2025</span>, Netherlands.
+      </span>
+    ),
   },
   {
     date: 'May 13, 2025',
-    text: <span>Joined <span className="font-semibold text-orange-600">CVIG Lab</span> as a <span className="font-semibold text-orange-600">Summer Research Intern</span>.</span>,
+    text: (
+      <span>
+        Joined <span className="font-semibold text-orange-600">CVIG Lab</span> as a{' '}
+        <span className="font-semibold text-orange-600">Summer Research Intern</span>.
+      </span>
+    ),
   },
   {
     date: 'April 30, 2025',
-    text: <span>Awarded <span className="font-semibold text-orange-600">2nd Prize</span> for <span className="font-semibold text-orange-600">Best Undergraduate Research Project</span> at IIT Gandhinagar.</span>,
+    text: (
+      <span>
+        Awarded <span className="font-semibold text-orange-600">2nd Prize</span> for{' '}
+        <span className="font-semibold text-orange-600">Best Undergraduate Research Project</span> at IIT Gandhinagar.
+      </span>
+    ),
   },
   {
     date: 'Jan 26, 2025',
-    text: <span>Placed on the <span className="underline text-orange-600">Dean’s List</span> for Semester 1, 2024-2025 at IIT Gandhinagar! <span>🎉</span></span>,
+    text: (
+      <span>
+        Placed on the <span className="underline text-orange-600">Dean’s List</span> for Semester 1, 2024-2025 at IIT Gandhinagar!{' '}
+        <span>🎉</span>
+      </span>
+    ),
   },
   {
     date: 'Nov 06, 2024',
-    text: <span>Became a <span className="font-semibold text-orange-600">Core Member</span> of the <span className="font-semibold text-orange-600">ML Club</span> at IIT Gandhinagar.</span>,
+    text: (
+      <span>
+        Became a <span className="font-semibold text-orange-600">Core Member</span> of the{' '}
+        <span className="font-semibold text-orange-600">ML Club</span> at IIT Gandhinagar.
+      </span>
+    ),
   },
   {
     date: 'Sept 03, 2024',
-    text: <span>Selected as <span className="font-semibold text-orange-600">ADH Mentor</span> for <span className="font-semibold text-orange-600">MA 103: Calculus of Single Variable and Linear Algebra</span>, guiding and helping 50+ students.</span>,
-  },
-  {
-    date: 'Sept 20, 2024',
-    text: <span>Joined the <span className="font-semibold text-orange-600">Blithchron Tech Team</span> at IIT Gandhinagar.</span>,
-  },
-  {
-    date: 'Jan 26, 2024',
-    text: <span>Placed on the <span className="underline text-orange-600">Dean’s List</span> for Semester 1, 2023-2024 at IIT Gandhinagar! <span>🎉</span></span>,
+    text: (
+      <span>
+        Selected as <span className="font-semibold text-orange-600">ADH Mentor</span> for{' '}
+        <span className="font-semibold text-orange-600">MA 103: Calculus of Single Variable and Linear Algebra</span>, guiding and helping 300+ students.
+      </span>
+    ),
   },
   {
     date: 'April 15, 2024',
-    text: <span>Secured <span className="font-semibold text-orange-600">Runner Up</span> position at <span className="font-semibold text-orange-600">HackRush 2024</span>.</span>,
+    text: (
+      <span>
+        Secured <span className="font-semibold text-orange-600">Runner Up</span> position at{' '}
+        <span className="font-semibold text-orange-600">HackRush 2024</span>.
+      </span>
+    ),
   },
 ];
 
@@ -97,10 +138,10 @@ const About: React.FC = () => (
         </div>
         <div className="flex-1 w-full md:pl-10 flex flex-col justify-center py-7 md:py-10 px-5 sm:px-6 md:px-8">
           <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-slate-200 mb-7 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
-            Hi, I am Soham Gaonkar, a junior undergraduate in Artificial Intelligence at IIT Gandhinagar. I enjoy working at the intersection of mathematics, computing, and physics, and I like building things that are both technically strong and practically useful. My current focus is on Data Science, Computer Vision, and Applied Machine Learning.
+            Hi, I am Soham Gaonkar, a junior undergraduate in Artificial Intelligence at IIT Gandhinagar. I enjoy working at the intersection of mathematics, computing, and physics, and I like building things that are both technically strong and practically useful. My current focus is on Computer Vision, Model Compression, on-device AI, and Medical Image Computing.
           </p>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-slate-300 mb-7 leading-relaxed" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
-            Recently, I worked as a Summer Research Intern at CVIG Lab (IIT Gandhinagar), where I explored 3D reconstruction and inverse rendering workflows. I am also an incoming R&D Summer Intern at Samsung Research Institute.
+            Recently, I have been working as a Research Intern at Next Level Labs, Samsung R&D Institute (Noida) in the on-device AI team. Previously, I was a Research Intern at Soket AI and a Summer Research Intern at CVIG Lab (IIT Gandhinagar).
           </p>
           <h3 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-white" style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}>
             Skills & Interests
