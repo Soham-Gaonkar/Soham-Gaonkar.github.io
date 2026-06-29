@@ -107,7 +107,7 @@ const ChessGame: React.FC = () => {
       const move = game.move({
         from: sourceSquare,
         to: targetSquare,
-        promotion: piece.pieceType[1]?.toLowerCase() ?? 'q', // Default promotion to Queen
+        promotion: 'q', // Always promote to Queen
       });
 
       if (move === null) return false;

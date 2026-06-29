@@ -13,6 +13,56 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 'iit-gandhinagar-ai-journey',
+    title: 'From Theory to SOTA: My Journey in Artificial Intelligence at IIT Gandhinagar',
+    date: 'June 2026',
+    readTime: '5 min read',
+    tags: ['IIT Gandhinagar', 'Artificial Intelligence', 'Research', 'Life'],
+    excerpt: 'Reflecting on my first three years at IITGN: achieving Department Rank 1, conducting medical imaging and computer vision research, and mentoring the next batch of AI enthusiasts.',
+    content: [
+      'Joining the Indian Institute of Technology Gandhinagar (IITGN) in 2023 as part of the newly launched B.Tech program in Artificial Intelligence was a major milestone. Over the past three years, the journey has transitioned from learning foundational calculus to building state-of-the-art model compression algorithms and presenting medical imaging research on international stages.',
+      'Here is a look back at my experiences, milestones, and what makes the AI journey at IITGN so unique.',
+      'image:/assets/logos/iitgn-logo.png',
+      '### 1. Navigating the Foundations: Academics and Mentorship',
+      'IIT Gandhinagar\'s academic curriculum is designed to be highly hands-on and interdisciplinary. Early on, I dived into rigorous coursework like Mathematical Foundations for AI, Computer Vision, and Software Tools for AI. The hard work paid off: I achieved Department Rank 1 in the Artificial Intelligence branch with a CPI of 9.3/10, was placed on the Dean\'s List, and received the Academic Excellence Scholarship for the 2024-2025 academic year.',
+      'But learning is only half the equation; teaching solidifies it. In late 2024, I served as an ADH Mentor for MA 103: Calculus of Single Variable and Linear Algebra, leading problem-solving sessions for over 300 first-year students. Later, I joined the core committee of the IITGN Machine Learning Club, organizing workshops and mentoring junior students as they stepped into their first neural network projects.',
+      'image:/assets/iitgn-bg.jpg',
+      '### 2. Dive into Research: CVIG Lab & Medical Imaging',
+      'Research at IITGN isn\'t restricted to graduate students. In the summer of 2025, I joined the Computer Vision and Image Graphics (CVIG) Lab under the guidance of Prof. Shanmuganathan Raman. My work focused on PanoTo3D—reconstructing dense 3D scene geometry and novel view synthesis from single 360° panoramas using 3D Gaussian Splatting.',
+      'In parallel, I collaborated with Prof. Himanshu Shekhar on histotripsy ultrasound segmentation. We designed a DeepLabV3 segmentation pipeline incorporating a custom Dice-Focal loss function to isolate ablation bubble clouds under heavy speckle noise. The results were outstanding: we improved mean IoU to 83% and accuracy to 97% over existing baselines. Our manuscript was accepted for presentation at the IEEE International Ultrasonics Symposium (IUS 2025) in the Netherlands!',
+      'image:/assets/iitgn-start.png',
+      '### 3. Engineering and Hackathons',
+      'Beyond theoretical research, the annual hackathons and tech meets at IITGN provided a canvas to build fast and push boundaries. At HackRush (our annual hackathon), my team secured the Runner-Up position in the Robotics track by building RoboRig—a 2R manipulator arm simulation with real-time feedback controls and trajectory optimization.',
+      'Later, we competed in the highly selective Amazon ML Challenge, placing in the Top 200 out of over 20,000 teams nationwide. These experiences taught me how to work effectively in cross-functional teams under intense time constraints.',
+      '### 4. Looking Ahead',
+      'Reflecting on these first three years, IIT Gandhinagar has given me the perfect environment to grow as a researcher and developer. As I prepare for my upcoming research internship at Samsung R&D Institute Noida, I am excited to carry forward the skills, friendships, and curiosity cultivated here.'
+    ]
+  },
+  {
+    id: 'life-at-samsung-rnd-noida',
+    title: 'Beyond the Code: My Experience Interning at Samsung R&D Institute Noida',
+    date: 'June 2026',
+    readTime: '5 min read',
+    tags: ['Samsung R&D', 'Internship', 'Life', 'Noida'],
+    excerpt: 'An inside look at the workspace culture, life in Noida/Delhi, and the rewarding day-to-day experience of interning at Samsung R&D Institute (SRI-N) beyond the technical tasks.',
+    content: [
+      'While the technical challenges of optimizing vision-language models for mobile NPUs have been fascinating, an internship at a major corporate R&D center like Samsung R&D Institute Noida (SRI-N) is about so much more than just writing code. From exploring the massive campus in Sector 62 to navigating the Delhi Metro and grabbing tea with team members, the day-to-day life here has been a vibrant journey.',
+      'Here is an inside look at what it is actually like to work at Samsung R&D Noida, and the life experiences that defined my summer here.',
+      '### 1. The Campus and Daily Life at SRI-N',
+      'Located in Noida Sector 62, the Samsung office is a massive, modern complex. Walking in for the first time, you immediately feel the scale of the operation—thousands of engineers working on cutting-edge features for Samsung\'s global ecosystem. The workspace is open, bustling, and designed for collaboration.',
+      'One of the highlights of daily office life has to be the dining and cafeteria facilities. With a wide variety of food options, coffee stations, and recreational spaces, it is easy to unwind during breaks. Grab-and-go snack bars and tea-coffee machines serve as the perfect spots for meeting other interns from different departments and exchanging research ideas.',
+      'image:/assets/samsung.jpeg',
+      '### 2. Team Culture and Mentorship',
+      'Working at the Next Level Labs within the on-device AI team has been incredibly welcoming. The culture is collaborative rather than hierarchical. Senior researchers and managers are always approachable, happy to white-board a complex optimization problem, or chat about the latest industry trends over lunch.',
+      'We have regular team bonding sessions and informal gatherings that help break the ice. It is a space where asking questions is highly encouraged, and even as an intern, your ideas on model compilation and hardware efficiency are listened to and valued.',
+      '### 3. Living in Noida and Navigating Delhi NCR',
+      'Apart from the office, adjusting to life in Noida and the wider Delhi NCR region has been an adventure in itself. Noida\'s wide roads, high-rise buildings, and sprawling shopping hubs like DLF Mall of India contrast beautifully with the historic, bustling heart of Delhi just a metro ride away.',
+      'Commuting on the Delhi Metro has become a staple experience—navigating the Blue Line during rush hour is a rite of passage for anyone in NCR! On weekends, this connectivity made it incredibly easy to escape the corporate routine, explore the historical monuments of Old Delhi, visit local street food spots, or hang out with friends in Connaught Place.',
+      '### 4. Key Takeaways',
+      'An internship is a golden window to understand what corporate research looks like, but it is also about building a network of peers and mentors who share your passions. The friendships, tea breaks, and weekend explorations in NCR have made my time at Samsung R&D Noida an unforgettable chapter of my undergraduate years.'
+    ]
+  },
+  {
     id: 'on-device-vlm-optimization',
     title: 'On-Device VLM & LLM Inference: Optimizing Attention Layouts for Mobile Chipsets',
     date: 'June 2026',
@@ -161,6 +211,19 @@ const Blog: React.FC = () => {
                     <div className="px-6 py-4 bg-zinc-100 dark:bg-slate-800 border border-zinc-200 dark:border-slate-700/50 rounded-2xl font-serif text-lg sm:text-2xl text-center shadow-inner text-slate-800 dark:text-slate-200 leading-normal">
                       <span className="italic font-semibold">L</span><sub>total</sub> = &lambda; &middot; <span className="italic font-semibold">L</span><sub>Dice</sub> + (1 - &lambda;) &middot; <span className="italic font-semibold">L</span><sub>Focal</sub>
                     </div>
+                  </div>
+                );
+              }
+              if (paragraph.startsWith('image:')) {
+                const imagePath = paragraph.replace('image:', '').trim();
+                const isLogo = imagePath.includes('logo');
+                return (
+                  <div key={index} className={`my-8 overflow-hidden mx-auto ${isLogo ? 'max-w-[140px]' : 'rounded-2xl shadow-lg border border-zinc-200 dark:border-slate-700/50 max-w-2xl bg-white dark:bg-slate-800 p-1'}`}>
+                    <img 
+                      src={imagePath} 
+                      alt="Blog visual" 
+                      className={`h-auto object-contain mx-auto ${isLogo ? 'w-[140px]' : 'w-full max-h-[480px] rounded-xl'}`} 
+                    />
                   </div>
                 );
               }

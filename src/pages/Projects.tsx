@@ -40,6 +40,7 @@ const projects = [
   },
   {
     title: 'NebulaEdit — AI Image Editor',
+    image: '/assets/projects/nebulaedit.png',
     tags: ['Inter IIT Adobe PS', 'Deep Learning', 'Diffusion Models', 'React', 'FastAPI'],
     description:
       'Developed a prompt-driven image editing system using diffusion models and optimized inference pipelines. Submitted for the Adobe Inter IIT TechMeet challenge 2025, bringing professional-grade AI editing tools to the web.',
@@ -149,8 +150,17 @@ const Projects: React.FC = () => (
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl shadow-md p-4 md:p-8 flex flex-col relative hover:shadow-lg transition-all"
+            className="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl shadow-md p-4 md:p-8 flex flex-col relative hover:shadow-lg transition-all overflow-hidden"
           >
+            {('image' in project && project.image) && (
+              <div className="-mx-4 -mt-4 md:-mx-8 md:-mt-8 mb-5 h-48 overflow-hidden bg-zinc-100 dark:bg-zinc-700 border-b border-zinc-200 dark:border-zinc-700">
+                <img 
+                  src={project.image as string} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                />
+              </div>
+            )}
             {/* Title */}
             <a
               href={project.github}

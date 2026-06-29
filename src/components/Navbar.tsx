@@ -2,14 +2,17 @@ import React, { useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 
-const navLinks = [
+const mainNavLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/projects', label: 'Projects' },
   { to: '/resume', label: 'Resume' },
-  { to: '/blog', label: 'Blog' },
-  { to: '/chess', label: 'Chess' },
   { to: '/contact', label: 'Contact' },
+];
+
+const secondaryNavLinks = [
+  { to: '/blog', label: 'Blog (🛠️)' },
+  { to: '/chess', label: 'Chess' },
 ];
 
 type SearchEntry = {
@@ -90,6 +93,8 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMoreOpen, setIsMobileMoreOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const location = useLocation();
@@ -139,7 +144,7 @@ const Navbar: React.FC = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-7">
           <div className="flex items-center gap-2">
-            {navLinks.map((link) => (
+            {mainNavLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
@@ -153,6 +158,57 @@ const Navbar: React.FC = () => {
                 {link.label}
               </Link>
             ))}
+
+            {/* "More" Dropdown Menu */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseLeave={() => setIsDropdownOpen(false)}
+            >
+              <button
+                className={`text-xl md:text-2xl font-semibold px-4 py-1 transition-all duration-200 flex items-center gap-1.5 focus:outline-none
+                  ${secondaryNavLinks.some(link => location.pathname === link.to)
+                    ? 'text-black dark:text-white'
+                    : 'text-gray-700 dark:text-slate-300 hover:text-black dark:hover:text-white'}
+                `}
+                style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
+                aria-haspopup="true"
+                aria-expanded={isDropdownOpen}
+              >
+                <span>More</span>
+                <svg 
+                  className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24" 
+                  strokeWidth="2.5"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute right-0 top-full pt-2 w-48 z-50">
+                  <div className="bg-white dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700 rounded-xl shadow-xl p-2">
+                    {secondaryNavLinks.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        onClick={() => setIsDropdownOpen(false)}
+                        className={`block text-lg font-semibold px-4 py-2.5 rounded-lg transition-colors duration-150
+                          ${location.pathname === link.to
+                            ? 'bg-zinc-100 dark:bg-zinc-700 text-black dark:text-white'
+                            : 'text-gray-700 dark:text-slate-300 hover:bg-zinc-50 dark:hover:bg-zinc-700/50 hover:text-black dark:hover:text-white'}
+                        `}
+                        style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
           {/* Search */}
           <div className="flex items-center gap-4 md:gap-5 ml-6 relative">
@@ -302,7 +358,7 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-zinc-900 border-t border-gray-200 dark:border-gray-700 shadow-lg z-50">
           <div className="flex flex-col py-4">
-            {navLinks.map((link) => (
+            {mainNavLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
@@ -317,6 +373,53 @@ const Navbar: React.FC = () => {
                 {link.label}
               </Link>
             ))}
+
+            {/* Mobile "More" Expandable Group */}
+            <div className="border-t border-gray-100 dark:border-gray-800 mt-2 pt-2">
+              <button
+                onClick={() => setIsMobileMoreOpen(!isMobileMoreOpen)}
+                className={`w-full text-left text-lg font-semibold px-6 py-3 flex items-center justify-between transition-colors
+                  ${secondaryNavLinks.some(link => location.pathname === link.to)
+                    ? 'text-black dark:text-white bg-gray-50 dark:bg-zinc-800'
+                    : 'text-gray-700 dark:text-slate-300'}
+                `}
+                style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
+              >
+                <span>More</span>
+                <svg 
+                  className={`w-4 h-4 transition-transform duration-200 ${isMobileMoreOpen ? 'rotate-180' : ''}`} 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24" 
+                  strokeWidth="2.5"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+
+              {isMobileMoreOpen && (
+                <div className="bg-gray-50/50 dark:bg-zinc-800/30 pl-4">
+                  {secondaryNavLinks.map((link) => (
+                    <Link
+                      key={link.to}
+                      to={link.to}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setIsMobileMoreOpen(false);
+                      }}
+                      className={`block text-base font-semibold px-8 py-3 border-l-4 border-transparent transition-all duration-200
+                        ${location.pathname === link.to
+                          ? 'border-black dark:border-slate-200 text-black dark:text-white bg-gray-100 dark:bg-zinc-800/80'
+                          : 'text-gray-600 dark:text-slate-400 hover:text-black dark:hover:text-white'}
+                      `}
+                      style={{ fontFamily: 'Inter, DM Sans, sans-serif' }}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

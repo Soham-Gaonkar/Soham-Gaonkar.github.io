@@ -8,7 +8,7 @@ const Home: React.FC = () => (
         {/* Left: Profile Image */}
         <div className="flex flex-col items-center md:items-center w-full justify-center">
           <img
-            src="/assets/profile.png"
+            src="/assets/profile.jpeg"
             alt="Soham Gaonkar"
             className="w-[82vw] h-[82vw] max-w-[18rem] max-h-[18rem] sm:max-w-[21rem] sm:max-h-[21rem] md:w-[27rem] md:h-[27rem] rounded-2xl object-cover shadow-lg border-4 border-black dark:border-slate-200"
           />
